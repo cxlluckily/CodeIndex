@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: consumer-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+# 配置熔断策略：
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        forceOpen: false # 强制打开熔断器 默认false关闭的
+        errorThresholdPercentage: 50 # 触发熔断错误比例阈值，默认值50%
+        sleepWindowInMilliseconds: 5000  # 熔断后休眠时长，默认值5秒
+        requestVolumeThreshold: 20  # 熔断触发最小请求次数，默认值是20
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000  # 熔断超时设置，默认为1秒

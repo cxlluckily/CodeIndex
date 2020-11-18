@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Springboot_model_03" />
+        <module name="Springboot_auto_configure" />
+        <module name="Springboot_parent" />
+        <module name="Springboot_rest_template" />
+        <module name="Springboot_model_02" />
+        <module name="Springboot_model_01" />
+        <module name="Springboot_spring_data_jpa" />
+        <module name="Springboot_mybatis_transfer" />
+        <module name="Springboot_mybatis" />
+        <module name="Springboot_basic" />
+        <module name="Springboot_easy_code" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Spingboot_easy_code" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spingboot_easy_code" options="-parameters" />
+      <module name="Springboot_auto_configure" options="-parameters" />
+      <module name="Springboot_easy_code" options="-parameters" />
+      <module name="Springboot_model_03" options="-parameters" />
+      <module name="Springboot_mybatis" options="-parameters" />
+      <module name="Springboot_mybatis_transfer" options="-parameters" />
+      <module name="Springboot_rest_template" options="-parameters" />
+      <module name="Springboot_spring_data_jpa" options="-parameters" />
+    </option>
+  </component>
+</project>

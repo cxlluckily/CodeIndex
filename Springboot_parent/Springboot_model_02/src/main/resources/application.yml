@@ -1,0 +1,40 @@
+# 相同缩进的行属于同一级，“:”后必须有一个空格
+#server:
+#  port: 9501
+
+
+# 普通类型
+name: 张三
+date: 2020.10.10
+# 定义对象
+person:
+  username: 李四
+  password: 123456
+  sex: 男
+  address: 安徽省
+  # 定义数组
+  hobbies:
+    - study
+    - play
+    - sleep
+  # 定义map
+  books:
+    - name: 红楼梦
+      writer: 曹雪芹
+    - name: 水浒传
+      writer: 施耐庵
+
+books:
+  books:
+    - name: 红楼梦
+      writer: 曹雪芹
+    - name: 水浒传
+      writer: 施耐庵
+
+
+spring:
+  profiles:
+    active: dev
+
+
+

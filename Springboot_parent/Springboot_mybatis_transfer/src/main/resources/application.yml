@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 连接spring_db表，下有一张tb_account表用于测试转账
+    url: jdbc:mysql://localhost:3306/spring_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
