@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>spark-basic</module>
+        <module>Spark-core</module>
     </modules>
 
 
