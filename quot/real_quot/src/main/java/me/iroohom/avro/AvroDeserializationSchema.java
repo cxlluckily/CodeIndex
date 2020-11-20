@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * @ClassName: AvroDeserializationSchema
  * @Author: Roohom
- * @Function:
+ * @Function: Avro反序列化
  * @Date: 2020/11/1 19:11
  * @Software: IntelliJ IDEA
  */
@@ -37,7 +37,6 @@ public class AvroDeserializationSchema<T> implements DeserializationSchema<T> {
     //覆写父类反序列化方法
     @Override
     public T deserialize(byte[] message) throws IOException {
-
         //定义反序列化约束对象
         SpecificDatumReader<T> avroSchema = null;
         if (topicName.equals(QuotConfig.config.getProperty("sse.topic"))) {

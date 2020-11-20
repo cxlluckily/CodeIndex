@@ -1,4 +1,4 @@
-package me.iroohom.spark
+package me.iroohom.spark.source
 
 import org.apache.spark.{SparkConf, SparkContext}
 

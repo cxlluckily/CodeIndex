@@ -1,5 +1,6 @@
 package me.iroohom.spark.source
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 object SparkWholeTextFileTest {
@@ -11,6 +12,7 @@ object SparkWholeTextFileTest {
 
       new SparkContext(sparkConf)
     }
+
 
     val inputRDD = sc.wholeTextFiles("D:\\itcast\\Spark\\Basic\\spark_day02_20201119\\05_数据\\ratings100", minPartitions = 2)
       .flatMap(tuple => tuple._2.split("\\s+"))
