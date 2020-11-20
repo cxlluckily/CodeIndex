@@ -1,4 +1,4 @@
-package cn.itcast.szse;
+package me.iroohom.szse;
 
 import java.io.*;
 import java.net.InetAddress;

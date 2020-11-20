@@ -24,7 +24,7 @@ public class CorsConfig extends WebMvcConfigurerAdapter {
                 ////允许所有的请求方法访问该跨域资源服务器，如：POST、GET、PUT、DELETE等。
                 //.allowedMethods("POST", "GET", "PUT", "OPTIONS", "DELETE")
                 .allowedMethods("*")
-                //允许所有的请求域名访问我们的跨域资源，可以固定单条或者多条内容，如："http://cn.itcast.com"，只有此url可以访问我们的跨域资源。
+                //允许所有的请求域名访问我们的跨域资源，可以固定单条或者多条内容，如："http://me.iroohom.com"，只有此url可以访问我们的跨域资源。
                 .allowedOrigins("*");
 
     }

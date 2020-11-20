@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package cn.itcast.avro;
+package me.iroohom.avro;
 
 import org.apache.avro.specific.SpecificData;
 
@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class SseAvro extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -6067078361682600032L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SseAvro\",\"namespace\":\"cn.itcast.avro\",\"fields\":[{\"name\":\"mdStreamID\",\"type\":[\"string\",\"null\"]},{\"name\":\"securityID\",\"type\":[\"string\",\"null\"]},{\"name\":\"symbol\",\"type\":[\"string\",\"null\"]},{\"name\":\"tradeVolume\",\"type\":[\"long\",\"null\"]},{\"name\":\"totalValueTraded\",\"type\":[\"long\",\"null\"]},{\"name\":\"preClosePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"openPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"highPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"lowPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradePrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"closePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradingPhaseCode\",\"type\":[\"string\",\"null\"]},{\"name\":\"timestamp\",\"type\":[\"long\",\"null\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SseAvro\",\"namespace\":\"me.iroohom.avro\",\"fields\":[{\"name\":\"mdStreamID\",\"type\":[\"string\",\"null\"]},{\"name\":\"securityID\",\"type\":[\"string\",\"null\"]},{\"name\":\"symbol\",\"type\":[\"string\",\"null\"]},{\"name\":\"tradeVolume\",\"type\":[\"long\",\"null\"]},{\"name\":\"totalValueTraded\",\"type\":[\"long\",\"null\"]},{\"name\":\"preClosePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"openPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"highPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"lowPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradePrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"closePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradingPhaseCode\",\"type\":[\"string\",\"null\"]},{\"name\":\"timestamp\",\"type\":[\"long\",\"null\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public CharSequence mdStreamID;
   @Deprecated public CharSequence securityID;

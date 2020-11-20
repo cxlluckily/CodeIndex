@@ -1,4 +1,4 @@
-package cn.itcast;
+package me.iroohom;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

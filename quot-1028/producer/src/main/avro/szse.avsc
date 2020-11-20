@@ -1,5 +1,5 @@
 {
-"namespace":"cn.itcast.avro",
+"namespace":"me.iroohom.avro",
 "type":"record",
 "name":"SzseAvro",
 "fields":[

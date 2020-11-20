@@ -1,4 +1,4 @@
-package cn.itcast.sse;
+package me.iroohom.sse;
 
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;

@@ -1,4 +1,4 @@
-package cn.itcast.avro;
+package me.iroohom.avro;
 
 import org.apache.avro.file.DataFileReader;
 import org.apache.avro.file.DataFileWriter;

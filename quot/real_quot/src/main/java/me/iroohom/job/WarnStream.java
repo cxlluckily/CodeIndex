@@ -108,9 +108,9 @@ public class WarnStream {
         watermarksData.print();
 
         //振幅告警 TODO:待测试
-//        new AmplitudeTask().process(watermarksData,env);
+        new AmplitudeTask().process(watermarksData,env);
         //涨跌幅告警 TODO:待测试
-//        new UpdownTask().process(watermarksData);
+        new UpdownTask().process(watermarksData);
 
         new TurnoverRateTask().process(watermarksData);
         env.execute();

@@ -1,6 +1,6 @@
-package cn.itcast.kafka;
+package me.iroohom.kafka;
 
-import cn.itcast.avro.AvroSerializer;
+import me.iroohom.avro.AvroSerializer;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

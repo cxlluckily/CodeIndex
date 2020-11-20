@@ -1,4 +1,4 @@
-package cn.itcast;
+package me.iroohom;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,7 +25,7 @@ public class KylinTest {
         //1.加载驱动
         Class.forName("org.apache.kylin.jdbc.Driver");
         //2.建立连接
-        Connection conn = DriverManager.getConnection("jdbc:kylin://node01:7070/itcast_quot_dm", "ADMIN", "KYLIN");
+        Connection conn = DriverManager.getConnection("jdbc:kylin://node01:7070/iroohom_quot_dm", "ADMIN", "KYLIN");
         //3.创建statement对象
         Statement st = conn.createStatement();
         //4.写sql，执行sql查询

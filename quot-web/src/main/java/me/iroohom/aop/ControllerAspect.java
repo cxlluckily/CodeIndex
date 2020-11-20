@@ -48,7 +48,7 @@ public class ControllerAspect {
 
     //2.定义切点
     //定义拦截点
-    @Pointcut("execution(public * cn.itcast.controller.*.*(..))")
+    @Pointcut("execution(public * me.iroohom.controller.*.*(..))")
     public void pointcunt(){}
 
     //3.新建环绕通知方法

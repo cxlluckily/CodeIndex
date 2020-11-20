@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package cn.itcast.avro;
+package me.iroohom.avro;
 
 import org.apache.avro.specific.SpecificData;
 
@@ -11,7 +11,7 @@ import org.apache.avro.specific.SpecificData;
 @org.apache.avro.specific.AvroGenerated
 public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = 9101089796905001608L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SzseAvro\",\"namespace\":\"cn.itcast.avro\",\"fields\":[{\"name\":\"mdStreamID\",\"type\":[\"string\",\"null\"]},{\"name\":\"securityID\",\"type\":[\"string\",\"null\"]},{\"name\":\"symbol\",\"type\":[\"string\",\"null\"]},{\"name\":\"tradeVolume\",\"type\":[\"long\",\"null\"]},{\"name\":\"totalValueTraded\",\"type\":[\"long\",\"null\"]},{\"name\":\"preClosePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"openPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"highPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"lowPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradePrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"closePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradingPhaseCode\",\"type\":[\"string\",\"null\"]},{\"name\":\"timestamp\",\"type\":[\"long\",\"null\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SzseAvro\",\"namespace\":\"me.iroohom.avro\",\"fields\":[{\"name\":\"mdStreamID\",\"type\":[\"string\",\"null\"]},{\"name\":\"securityID\",\"type\":[\"string\",\"null\"]},{\"name\":\"symbol\",\"type\":[\"string\",\"null\"]},{\"name\":\"tradeVolume\",\"type\":[\"long\",\"null\"]},{\"name\":\"totalValueTraded\",\"type\":[\"long\",\"null\"]},{\"name\":\"preClosePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"openPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"highPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"lowPrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradePrice\",\"type\":[\"double\",\"null\"]},{\"name\":\"closePx\",\"type\":[\"double\",\"null\"]},{\"name\":\"tradingPhaseCode\",\"type\":[\"string\",\"null\"]},{\"name\":\"timestamp\",\"type\":[\"long\",\"null\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.CharSequence mdStreamID;
   @Deprecated public java.lang.CharSequence securityID;
@@ -320,8 +320,8 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new SzseAvro RecordBuilder.
    * @return A new SzseAvro RecordBuilder
    */
-  public static cn.itcast.avro.SzseAvro.Builder newBuilder() {
-    return new cn.itcast.avro.SzseAvro.Builder();
+  public static me.iroohom.avro.SzseAvro.Builder newBuilder() {
+    return new me.iroohom.avro.SzseAvro.Builder();
   }
 
   /**
@@ -329,8 +329,8 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new SzseAvro RecordBuilder
    */
-  public static cn.itcast.avro.SzseAvro.Builder newBuilder(cn.itcast.avro.SzseAvro.Builder other) {
-    return new cn.itcast.avro.SzseAvro.Builder(other);
+  public static me.iroohom.avro.SzseAvro.Builder newBuilder(me.iroohom.avro.SzseAvro.Builder other) {
+    return new me.iroohom.avro.SzseAvro.Builder(other);
   }
 
   /**
@@ -338,8 +338,8 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new SzseAvro RecordBuilder
    */
-  public static cn.itcast.avro.SzseAvro.Builder newBuilder(cn.itcast.avro.SzseAvro other) {
-    return new cn.itcast.avro.SzseAvro.Builder(other);
+  public static me.iroohom.avro.SzseAvro.Builder newBuilder(me.iroohom.avro.SzseAvro other) {
+    return new me.iroohom.avro.SzseAvro.Builder(other);
   }
 
   /**
@@ -371,7 +371,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(cn.itcast.avro.SzseAvro.Builder other) {
+    private Builder(me.iroohom.avro.SzseAvro.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.mdStreamID)) {
         this.mdStreamID = data().deepCopy(fields()[0].schema(), other.mdStreamID);
@@ -431,7 +431,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing SzseAvro instance
      * @param other The existing instance to copy.
      */
-    private Builder(cn.itcast.avro.SzseAvro other) {
+    private Builder(me.iroohom.avro.SzseAvro other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.mdStreamID)) {
         this.mdStreamID = data().deepCopy(fields()[0].schema(), other.mdStreamID);
@@ -500,7 +500,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'mdStreamID'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setMdStreamID(java.lang.CharSequence value) {
+    public me.iroohom.avro.SzseAvro.Builder setMdStreamID(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.mdStreamID = value;
       fieldSetFlags()[0] = true;
@@ -520,7 +520,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'mdStreamID' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearMdStreamID() {
+    public me.iroohom.avro.SzseAvro.Builder clearMdStreamID() {
       mdStreamID = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -539,7 +539,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'securityID'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setSecurityID(java.lang.CharSequence value) {
+    public me.iroohom.avro.SzseAvro.Builder setSecurityID(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.securityID = value;
       fieldSetFlags()[1] = true;
@@ -559,7 +559,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'securityID' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearSecurityID() {
+    public me.iroohom.avro.SzseAvro.Builder clearSecurityID() {
       securityID = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -578,7 +578,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'symbol'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setSymbol(java.lang.CharSequence value) {
+    public me.iroohom.avro.SzseAvro.Builder setSymbol(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.symbol = value;
       fieldSetFlags()[2] = true;
@@ -598,7 +598,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'symbol' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearSymbol() {
+    public me.iroohom.avro.SzseAvro.Builder clearSymbol() {
       symbol = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -617,7 +617,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'tradeVolume'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setTradeVolume(java.lang.Long value) {
+    public me.iroohom.avro.SzseAvro.Builder setTradeVolume(java.lang.Long value) {
       validate(fields()[3], value);
       this.tradeVolume = value;
       fieldSetFlags()[3] = true;
@@ -637,7 +637,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'tradeVolume' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearTradeVolume() {
+    public me.iroohom.avro.SzseAvro.Builder clearTradeVolume() {
       tradeVolume = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -656,7 +656,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'totalValueTraded'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setTotalValueTraded(java.lang.Long value) {
+    public me.iroohom.avro.SzseAvro.Builder setTotalValueTraded(java.lang.Long value) {
       validate(fields()[4], value);
       this.totalValueTraded = value;
       fieldSetFlags()[4] = true;
@@ -676,7 +676,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'totalValueTraded' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearTotalValueTraded() {
+    public me.iroohom.avro.SzseAvro.Builder clearTotalValueTraded() {
       totalValueTraded = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -695,7 +695,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'preClosePx'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setPreClosePx(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setPreClosePx(java.lang.Double value) {
       validate(fields()[5], value);
       this.preClosePx = value;
       fieldSetFlags()[5] = true;
@@ -715,7 +715,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'preClosePx' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearPreClosePx() {
+    public me.iroohom.avro.SzseAvro.Builder clearPreClosePx() {
       preClosePx = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -734,7 +734,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'openPrice'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setOpenPrice(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setOpenPrice(java.lang.Double value) {
       validate(fields()[6], value);
       this.openPrice = value;
       fieldSetFlags()[6] = true;
@@ -754,7 +754,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'openPrice' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearOpenPrice() {
+    public me.iroohom.avro.SzseAvro.Builder clearOpenPrice() {
       openPrice = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -773,7 +773,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'highPrice'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setHighPrice(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setHighPrice(java.lang.Double value) {
       validate(fields()[7], value);
       this.highPrice = value;
       fieldSetFlags()[7] = true;
@@ -793,7 +793,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'highPrice' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearHighPrice() {
+    public me.iroohom.avro.SzseAvro.Builder clearHighPrice() {
       highPrice = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -812,7 +812,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'lowPrice'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setLowPrice(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setLowPrice(java.lang.Double value) {
       validate(fields()[8], value);
       this.lowPrice = value;
       fieldSetFlags()[8] = true;
@@ -832,7 +832,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'lowPrice' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearLowPrice() {
+    public me.iroohom.avro.SzseAvro.Builder clearLowPrice() {
       lowPrice = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -851,7 +851,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'tradePrice'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setTradePrice(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setTradePrice(java.lang.Double value) {
       validate(fields()[9], value);
       this.tradePrice = value;
       fieldSetFlags()[9] = true;
@@ -871,7 +871,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'tradePrice' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearTradePrice() {
+    public me.iroohom.avro.SzseAvro.Builder clearTradePrice() {
       tradePrice = null;
       fieldSetFlags()[9] = false;
       return this;
@@ -890,7 +890,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'closePx'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setClosePx(java.lang.Double value) {
+    public me.iroohom.avro.SzseAvro.Builder setClosePx(java.lang.Double value) {
       validate(fields()[10], value);
       this.closePx = value;
       fieldSetFlags()[10] = true;
@@ -910,7 +910,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'closePx' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearClosePx() {
+    public me.iroohom.avro.SzseAvro.Builder clearClosePx() {
       closePx = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -929,7 +929,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'tradingPhaseCode'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setTradingPhaseCode(java.lang.CharSequence value) {
+    public me.iroohom.avro.SzseAvro.Builder setTradingPhaseCode(java.lang.CharSequence value) {
       validate(fields()[11], value);
       this.tradingPhaseCode = value;
       fieldSetFlags()[11] = true;
@@ -949,7 +949,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'tradingPhaseCode' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearTradingPhaseCode() {
+    public me.iroohom.avro.SzseAvro.Builder clearTradingPhaseCode() {
       tradingPhaseCode = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -968,7 +968,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'timestamp'.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder setTimestamp(java.lang.Long value) {
+    public me.iroohom.avro.SzseAvro.Builder setTimestamp(java.lang.Long value) {
       validate(fields()[12], value);
       this.timestamp = value;
       fieldSetFlags()[12] = true;
@@ -988,7 +988,7 @@ public class SzseAvro extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'timestamp' field.
       * @return This builder.
       */
-    public cn.itcast.avro.SzseAvro.Builder clearTimestamp() {
+    public me.iroohom.avro.SzseAvro.Builder clearTimestamp() {
       timestamp = null;
       fieldSetFlags()[12] = false;
       return this;

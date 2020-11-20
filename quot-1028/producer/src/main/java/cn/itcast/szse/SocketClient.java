@@ -1,7 +1,7 @@
-package cn.itcast.szse;
+package me.iroohom.szse;
 
-import cn.itcast.avro.SzseAvro;
-import cn.itcast.kafka.KafkaPro;
+import me.iroohom.avro.SzseAvro;
+import me.iroohom.kafka.KafkaPro;
 
 import java.io.DataInputStream;
 import java.io.InputStream;

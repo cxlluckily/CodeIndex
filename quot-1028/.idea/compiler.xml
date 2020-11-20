@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="avro" />
-        <module name="Druid" />
-        <module name="itcast_real_quot" />
         <module name="kylin" />
+        <module name="real_quot" />
         <module name="producer" />
+        <module name="Druid" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="iroohom_real_quot" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
