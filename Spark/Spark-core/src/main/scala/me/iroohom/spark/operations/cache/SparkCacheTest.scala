@@ -20,7 +20,10 @@ object SparkCacheTest {
     val inputRDD = sc.textFile("datas\\wordcount.data", minPartitions = 2)
 
     /**
-     * 将数据缓存至内存
+     * 将数据缓存至内存 Persist 和 Cache 只能保存在本地的磁盘和内存中(或者堆外内存)
+     *
+     * Persist和Cache，不会丢掉RDD间的依赖链/依赖关系，因为这种缓存是不可靠的，如果出
+     * 现了一些错误(例如 Executor 宕机)，需要通过回溯依赖链重新计算出来；
      */
     inputRDD.cache()
     inputRDD.persist()

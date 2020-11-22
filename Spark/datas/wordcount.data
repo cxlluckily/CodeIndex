@@ -1,5 +1,11 @@
 hadoop spark hive hue hue
+
+
 hue
 hive
-hbase hbase hive hue spark kafka
+
+
+     hbase    hbase hive hue   spark kafka
 zookeeper flink
+
+

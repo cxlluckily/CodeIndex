@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spark-core" />
         <module name="spark-basic" />
+        <module name="Spark-SQL" />
+        <module name="Spark-core-externalSource" />
+        <module name="Spark-core" />
       </profile>
     </annotationProcessing>
   </component>

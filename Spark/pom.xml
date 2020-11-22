@@ -11,6 +11,8 @@
     <modules>
         <module>spark-basic</module>
         <module>Spark-core</module>
+        <module>Spark-core-externalSource</module>
+        <module>Spark-SQL</module>
     </modules>
 
 

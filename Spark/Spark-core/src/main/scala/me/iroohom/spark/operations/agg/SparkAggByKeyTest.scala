@@ -56,8 +56,8 @@ object SparkAggByKeyTest {
      * def aggregateByKey[U: ClassTag]
      * (zeroValue: U) // 聚合中间临时变量初始值，类似fold函数zeroValue
      * (
-     * seqOp: (U, V) => U, // 各个分区内数据聚合操作函数
-     * combOp: (U, U) => U // 分区间聚合结果的聚合操作函数
+     *      seqOp: (U, V) => U, // 各个分区内数据聚合操作函数
+     *      combOp: (U, U) => U // 分区间聚合结果的聚合操作函数
      * ): RDD[(K, U)]
      */
     val resultRDD4 = wordsRDD.aggregateByKey(0)(

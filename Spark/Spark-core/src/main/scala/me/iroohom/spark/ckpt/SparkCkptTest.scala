@@ -28,6 +28,8 @@ object SparkCkptTest {
 
     /**
      * 调用checkpoint函数，将RDD进行备份，需要RDD中Action函数触发
+     * Checkpoint会斩断依赖链，因为Checkpoint会把结果保存在HDFS这类存储中，更加的安
+     * 全可靠，一般不需要回溯依赖链；
      */
     datasRDD.checkpoint()
     datasRDD.count()
