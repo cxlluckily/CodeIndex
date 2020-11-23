@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://192.168.88.100:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="roohom@localhost" uuid="644069f0-b425-4202-86c5-bcceb10237d0">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/roohom?serverTimezone=UTC&amp;characterEncoding=utf8&amp;useUnicode=true</jdbc-url>
+    </data-source>
   </component>
 </project>

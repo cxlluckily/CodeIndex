@@ -16,7 +16,6 @@ object SparkCacheTest {
       new SparkContext(sparkConf)
     }
 
-
     val inputRDD = sc.textFile("datas\\wordcount.data", minPartitions = 2)
 
     /**
