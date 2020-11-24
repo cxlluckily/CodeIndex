@@ -13,6 +13,7 @@
         <module>Spark-core</module>
         <module>Spark-core-externalSource</module>
         <module>Spark-SQL</module>
+        <module>Spark-train</module>
     </modules>
 
 

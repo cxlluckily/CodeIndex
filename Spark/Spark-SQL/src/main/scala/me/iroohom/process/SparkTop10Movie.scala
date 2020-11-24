@@ -86,6 +86,7 @@ object SparkTop10Movie {
     import org.apache.spark.sql.functions._
 
     val top10movieDSL = ratingsDF
+//      .select($"timestamp")
       //按照电影ID进行分组
       .groupBy($"movie_id")
       //按照电影评分进行聚合 计数评分的人
@@ -105,30 +106,30 @@ object SparkTop10Movie {
 
 
 
-    //TODO：保存结果数据
-    /**
-     * 因为ratingDF在下面会使用两次，产生了多次使用，于是将其持久化，后续在使用就无需重新创建使得程序更快
-     */
-    ratingsDF.persist(StorageLevel.MEMORY_AND_DISK)
-    //TODO:数据保存至MySQL
-    top10movieDSL
-      .coalesce(1)
-        .write
-        .mode(SaveMode.Overwrite)
-        .format("jdbc")
-        .option("driver","com.mysql.cj.jdbc.Driver")
-        .option("url", "jdbc:mysql://localhost:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true")
-        .option("user","root")
-        .option("password","123456")
-        .option("dbtable","roohom.top10movies")
-        .save()
+        //TODO：保存结果数据
+        /**
+         * 因为ratingDF在下面会使用两次，产生了多次使用，于是将其持久化，后续在使用就无需重新创建使得程序更快
+         */
+        ratingsDF.persist(StorageLevel.MEMORY_AND_DISK)
+        //TODO:数据保存至MySQL
+        top10movieDSL
+          .coalesce(1)
+            .write
+            .mode(SaveMode.Overwrite)
+            .format("jdbc")
+            .option("driver","com.mysql.cj.jdbc.Driver")
+            .option("url", "jdbc:mysql://localhost:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true")
+            .option("user","root")
+            .option("password","123456")
+            .option("dbtable","roohom.top10movies")
+            .save()
 
-    //TODO：保存到文件
-    top10movieDSL
-        .coalesce(1)
-        .write
-        .mode(SaveMode.Overwrite)
-        .csv("datas/spark/top10movie")
+        //TODO：保存到文件
+        top10movieDSL
+            .coalesce(1)
+            .write
+            .mode(SaveMode.Overwrite)
+            .csv("datas/spark/top10movie")
 
 
     spark.stop()

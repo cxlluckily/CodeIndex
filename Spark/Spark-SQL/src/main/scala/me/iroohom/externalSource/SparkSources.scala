@@ -11,8 +11,8 @@ object SparkSources {
     val spark = SparkSession.builder()
       .appName(this.getClass.getSimpleName.stripSuffix("$"))
       .master("local[2]")
-    //TODO: 设置SparkSQL中产生时分区数目，实际项目中具体依据数据量和业务复杂度合适调整
-      .config("spark.sql.shuffle.partitions","4")
+      //TODO: 设置SparkSQL中产生时分区数目，实际项目中具体依据数据量和业务复杂度合适调整
+      .config("spark.sql.shuffle.partitions", "4")
       .getOrCreate()
     import spark.implicits._
 
@@ -47,12 +47,13 @@ object SparkSources {
      * TODO:实际开发中，针对JSON格式文本数据，直接使用text/textFile读取，然后解析提取其中字段信息
      */
     val peopleDS: Dataset[String] = spark.read.textFile("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
-        peopleDS.printSchema()
-        peopleDS.show(10,truncate = false)
+    peopleDS.printSchema()
+    peopleDS.show(10, truncate = false)
     //对JSON格式字符串，SparkSQL提供函数：get_json_object, def get_json_object(e: Column, path: String): Column
     import org.apache.spark.sql.functions.get_json_object
     val resultDF: DataFrame = peopleDS
-      .select (
+      .select(
+        //$.name $表示一整行数据，.name表示其中一个数据，如果name下还有数据，继续使用.访问
         get_json_object($"value", "$.name").as("name"),
         get_json_object($"value", "$.salary").cast(IntegerType).as("salary")
       )
