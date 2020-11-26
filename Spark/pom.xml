@@ -14,6 +14,7 @@
         <module>Spark-core-externalSource</module>
         <module>Spark-SQL</module>
         <module>Spark-train</module>
+        <module>Spark-streaming</module>
     </modules>
 
 

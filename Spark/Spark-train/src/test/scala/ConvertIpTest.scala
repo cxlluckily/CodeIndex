@@ -1,5 +1,3 @@
-package me.iroohom.spark
-
 import org.lionsoul.ip2region.{DbConfig, DbSearcher}
 
 object ConvertIpTest {
