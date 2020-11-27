@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spark-basic" />
+        <module name="spark-env" />
+        <module name="Spark-core" />
+        <module name="Spark-structuredStreaming" />
         <module name="Spark-core-externalSource" />
         <module name="Spark-train" />
+        <module name="Spark-realtime-train" />
         <module name="Spark-SQL" />
-        <module name="Spark-core" />
         <module name="Spark-streaming" />
       </profile>
     </annotationProcessing>

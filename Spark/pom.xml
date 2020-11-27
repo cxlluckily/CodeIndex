@@ -9,12 +9,14 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>spark-basic</module>
+        <module>spark-env</module>
         <module>Spark-core</module>
         <module>Spark-core-externalSource</module>
         <module>Spark-SQL</module>
         <module>Spark-train</module>
         <module>Spark-streaming</module>
+        <module>Spark-structuredStreaming</module>
+        <module>Spark-realtime-train</module>
     </modules>
 
 

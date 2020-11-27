@@ -60,11 +60,11 @@ object PmtReporterRunner extends Logging {
      * ii. 将分析结果保存MySQL数据库表中
      */
     // 3.1. 地域分布统计：region_stat_analysis
-    //    RegionStateReport.doReport(pmtDF)
+        RegionStateReport.doReport(pmtDF)
     // 3.2. 广告区域统计：ads_region_analysis
-    //    AdsRegionAnalysisReport.doReport(pmtDF)
+        AdsRegionAnalysisReport.doReport(pmtDF)
     // 3.3. 广告APP统计：ads_app_analysis
-    AdsAppAnalysisReport.doReport(pmtDF)
+//    AdsAppAnalysisReport.doReport(pmtDF)
     // 3.4. 广告设备统计：ads_device_analysis
     //AdsDeviceAnalysisReport.processData(pmtDF)
     // 3.5. 广告网络类型统计：ads_network_analysis

@@ -53,7 +53,7 @@ object SparkUtils {
   def main(args: Array[String]): Unit = {
     val session = createSparkSession(this.getClass)
 
-    println(session)
+    println(session.getClass.getSimpleName)
 
 //    Thread.sleep(10000000)
     session.stop()
