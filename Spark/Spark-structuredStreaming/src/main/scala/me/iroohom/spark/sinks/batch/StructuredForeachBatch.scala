@@ -38,7 +38,10 @@ object StructuredForeachBatch {
       .outputMode(OutputMode.Update())
       .queryName("query-wordcount")
       .trigger(Trigger.ProcessingTime("5 seconds"))
-      //使用foreach 函数将数据保存到MySQL
+
+      /**
+       * VITAL: 使用foreach 函数将数据保存到MySQL
+       */
       //def foreachBatch(function: VoidFunction2[Dataset[T], java.lang.Long]): DataStreamWriter[T]
       .foreachBatch { (batchDF: DataFrame, batchId: Long) =>
         println(s"BatchID: ${batchId}")
@@ -50,15 +53,13 @@ object StructuredForeachBatch {
             .mode(SaveMode.Overwrite)
             .format("jdbc")
             .option("driver", "com.mysql.cj.jdbc.Driver")
-            .option("url", "jdbc:mysql://node1.itcast.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true")
+            .option("url", "jdbc:mysql://node1:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true")
             .option("user", "root")
             .option("password", "123456")
             .option("dbtable", "db_spark.tb_word_count2")
             .save()
         }
       }
-
-
       // 设置检查点目录
       .option("checkpointLocation", "datas/structured/ckpt-wordcount002")
       .start() // 启动流式查询

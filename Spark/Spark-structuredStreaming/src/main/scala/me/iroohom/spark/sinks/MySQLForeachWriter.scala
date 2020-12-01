@@ -2,7 +2,6 @@ package me.iroohom.spark.sinks
 
 import java.sql.{Connection, DriverManager, PreparedStatement}
 
-import com.mysql.cj.jdbc.Driver
 import org.apache.spark.sql.{ForeachWriter, Row}
 
 /**
@@ -11,13 +10,15 @@ import org.apache.spark.sql.{ForeachWriter, Row}
 class MySQLForeachWriter extends ForeachWriter[Row] {
   var conn: Connection = null
   var pstmt: PreparedStatement = null
+
+  //VITAL: Replace 操作
   val insertSQL = "REPLACE INTO `tb_word_count` (`id`, `word`, `count`) VALUES (NULL, ?, ?)"
 
   //设置初始化连接
   override def open(partitionId: Long, epochId: Long): Boolean = {
     Class.forName("com.mysql.cj.jdbc.Driver")
     conn = DriverManager.getConnection(
-      "jdbc:mysql://node1.itcast.cn:3306/db_spark?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
+      "jdbc:mysql://node1:3306/db_spark?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
       "root",
       "123456"
     )

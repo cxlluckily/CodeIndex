@@ -32,20 +32,20 @@ object SparkJoinTest {
       )
     )
 
+    //VITAL: 面试：def join[W](other: RDD[(K, W)]): RDD[(K, (V, W))]
     val joinRDD = empRDD.join(deptRDD)
     joinRDD.foreach(println)
 
 
     val leftJoinRDD: RDD[(Int, (String, Option[String]))] = empRDD.leftOuterJoin(deptRDD)
-    leftJoinRDD.foreach{
-      case (deptNo,(empName,option))=>
+    leftJoinRDD.foreach {
+      case (deptNo, (empName, option)) =>
         val deptName = option match {
           case Some(value) => value
           case None => "None"
         }
         println(s"deptNo = ${deptNo}, empName = ${empName}, deptName = ${deptName}")
     }
-
 
 
     sc.stop()

@@ -6,7 +6,7 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 
 /**
  * 数据源：Rate Source，以每秒指定的行数生成数据，每个输出行包含一个timestamp和value。
- * TODO:待测试
+ *
  */
 object StructuredRateSource {
   def main(args: Array[String]): Unit = {
@@ -28,11 +28,12 @@ object StructuredRateSource {
       .option("numPartitions", "2") // 分区数目
       .load()
 
+    rateStreamDF.printSchema()
 
     val query = rateStreamDF.writeStream
       .outputMode(OutputMode.Append())
       .format("console")
-      .option("numRows", "100")
+      .option("numRows", "500")
       .option("truncate", "false")
       // 流式应用，需要启动start
       .start()
@@ -42,7 +43,6 @@ object StructuredRateSource {
     query.awaitTermination()
     // 等待所有任务运行完成才停止运行
     query.stop()
-
 
   }
 }

@@ -42,7 +42,7 @@ object StructuredQueryOutput {
       .outputMode(OutputMode.Update())
       //设置插入名称
       .queryName("query-wordcount")
-      //设置触发器
+      //设置触发器 固定时间批处理 默认一有数据就处理
       .trigger(Trigger.ProcessingTime("5 seconds"))
       .format("console")
       .option("numRows", "20")

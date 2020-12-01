@@ -1,6 +1,8 @@
 package me.iroohom.utils
 
 import me.iroohom.config.ApplicationConfig
+import org.apache.hadoop.hbase.client.Result
+import org.apache.hadoop.hbase.io.ImmutableBytesWritable
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.{Seconds, StreamingContext}
@@ -11,6 +13,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object SparkUtils {
   /**
    * 获取SparkSession实例对象，传递Class对象
+   *
    * @param clazz Spark Application字节码Class对象
    * @return SparkSession对象实例
    */
@@ -20,8 +23,13 @@ object SparkUtils {
       .setAppName(clazz.getSimpleName.stripSuffix("$"))
       .set("spark.debug.maxToStringFields", "2000")
       .set("spark.sql.debug.maxToStringFields", "2000")
+      // VITAL: 设置使用Kryo 序列化方式 当不能java序列化的时候，需要设置Kyro序列化
+      .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+      // VITAL: 注册序列化的数据类型
+      .registerKryoClasses(Array(classOf[ImmutableBytesWritable], classOf[Result]))
+
     // 2. 判断应用是否本地模式运行，如果是设置值
-    if(ApplicationConfig.APP_LOCAL_MODE){
+    if (ApplicationConfig.APP_LOCAL_MODE) {
       sparkConf
         .setMaster(ApplicationConfig.APP_SPARK_MASTER)
         // 设置Shuffle时分区数目
@@ -35,9 +43,11 @@ object SparkUtils {
     // 4. 返回实例
     session
   }
+
   /**
    * 获取StreamingContext流式上下文实例对象
-   * @param clazz Spark Application字节码Class对象
+   *
+   * @param clazz         Spark Application字节码Class对象
    * @param batchInterval 每批次时间间隔
    */
   def createStreamingContext(clazz: Class[_], batchInterval: Int): StreamingContext = {
@@ -51,7 +61,7 @@ object SparkUtils {
           .set("spark.sql.debug.maxToStringFields", "2000")
           .set("spark.streaming.stopGracefullyOnShutdown", "true")
         // 2. 判断应用是否本地模式运行，如果是设置值
-        if(ApplicationConfig.APP_LOCAL_MODE){
+        if (ApplicationConfig.APP_LOCAL_MODE) {
           sparkConf
             .setMaster(ApplicationConfig.APP_SPARK_MASTER)
             // 设置每批次消费数据最大数据量，生成环境使用命令行设置
