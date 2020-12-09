@@ -137,11 +137,11 @@ public class StockStream {
         //秒级行情，写入Hbase TODO: 秒级SinkHbase已测试
         new StockSecTask().process(watermarksData);
         //分时行情（60s），数据写入Druid和Kafka TODO:分时SinkDruid SinkKafka 已测试
-//        new StockMinuteTask().process(watermarksData);
+        new StockMinuteTask().process(watermarksData);
         //分时行情备份至HDFS TODO:分时备份SinkHDFS已测试
-//        new StockMinHdfsTask().process(watermarksData);
+        new StockMinHdfsTask().process(watermarksData);
         //个股涨幅榜，数据写入Kafka  TODO:个股涨幅 SinkKafka 已测试
-//        new StockIncreaseTask().process(watermarksData);
+        new StockIncreaseTask().process(watermarksData);
 
         env.execute("Stock Stream");
     }

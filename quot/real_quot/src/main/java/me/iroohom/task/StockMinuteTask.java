@@ -105,5 +105,4 @@ public class StockMinuteTask implements ProcessDataInterface {
         sseStr.addSink(sseKafkaProducer);
         szseStr.addSink(szseKafkaProducer);
     }
-
 }

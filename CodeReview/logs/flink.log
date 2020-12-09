@@ -1,0 +1,161 @@
+2020-12-02 21:46:42,154 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.cpu.cores' , default: null (fallback keys: []) required for local execution is not set, setting it to its default value 1.7976931348623157E308
+2020-12-02 21:46:42,158 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.memory.task.heap.size' , default: null (fallback keys: []) required for local execution is not set, setting it to its default value 9223372036854775807 bytes
+2020-12-02 21:46:42,158 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.memory.task.off-heap.size' , default: 0 bytes (fallback keys: []) required for local execution is not set, setting it to its default value 9223372036854775807 bytes
+2020-12-02 21:46:42,159 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.memory.network.min' , default: 64 mb (fallback keys: [{key=taskmanager.network.memory.min, isDeprecated=true}]) required for local execution is not set, setting it to its default value 64 mb
+2020-12-02 21:46:42,159 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.memory.network.max' , default: 1 gb (fallback keys: [{key=taskmanager.network.memory.max, isDeprecated=true}]) required for local execution is not set, setting it to its default value 64 mb
+2020-12-02 21:46:42,159 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils  - The configuration option Key: 'taskmanager.memory.managed.size' , default: null (fallback keys: [{key=taskmanager.memory.size, isDeprecated=true}]) required for local execution is not set, setting it to its default value 128 mb
+2020-12-02 21:46:42,182 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Starting Flink Mini Cluster
+2020-12-02 21:46:42,184 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Starting Metrics Registry
+2020-12-02 21:46:42,229 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl           - No metrics reporter configured, no metrics will be exposed/reported.
+2020-12-02 21:46:42,229 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Starting RPC Service(s)
+2020-12-02 21:46:42,697 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2020-12-02 21:46:42,959 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils         - Trying to start actor system at :0
+2020-12-02 21:46:43,006 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2020-12-02 21:46:43,021 INFO  akka.remote.Remoting                                          - Starting remoting
+2020-12-02 21:46:43,685 INFO  akka.remote.Remoting                                          - Remoting started; listening on addresses :[akka.tcp://flink-metrics@10.254.37.78:12491]
+2020-12-02 21:46:43,716 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils         - Actor system started at akka.tcp://flink-metrics@10.254.37.78:12491
+2020-12-02 21:46:43,727 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService              - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/MetricQueryService .
+2020-12-02 21:46:43,825 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Starting high-availability services
+2020-12-02 21:46:43,841 INFO  org.apache.flink.runtime.blob.BlobServer                      - Created BLOB server storage directory C:\Users\rooho\AppData\Local\Temp\blobStore-235c4c58-21cb-48d9-b5d2-855059bd0148
+2020-12-02 21:46:43,848 INFO  org.apache.flink.runtime.blob.BlobServer                      - Started BLOB server at 0.0.0.0:12493 - max concurrent requests: 50 - max backlog: 1000
+2020-12-02 21:46:43,853 INFO  org.apache.flink.runtime.blob.PermanentBlobCache              - Created BLOB cache storage directory C:\Users\rooho\AppData\Local\Temp\blobStore-8e54c509-29f4-4844-ab02-0d06182b9c32
+2020-12-02 21:46:43,856 INFO  org.apache.flink.runtime.blob.TransientBlobCache              - Created BLOB cache storage directory C:\Users\rooho\AppData\Local\Temp\blobStore-6a9444f9-d343-4f5e-9f59-8fff85a98849
+2020-12-02 21:46:43,857 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Starting 1 TaskManger(s)
+2020-12-02 21:46:43,863 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner       - Starting TaskManager with ResourceID: 10a71a29-e982-44b9-9580-4d69dde27c8d
+2020-12-02 21:46:43,872 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation      - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2020-12-02 21:46:43,881 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices     - Temporary file directory 'C:\Users\rooho\AppData\Local\Temp': total 99 GB, usable 24 GB (24.24% usable)
+2020-12-02 21:46:43,887 INFO  org.apache.flink.runtime.io.disk.FileChannelManagerImpl       - FileChannelManager uses directory C:\Users\rooho\AppData\Local\Temp\flink-io-8905439f-1550-4078-8e96-cc03628aa90e for spill files.
+2020-12-02 21:46:43,902 INFO  org.apache.flink.runtime.io.disk.FileChannelManagerImpl       - FileChannelManager uses directory C:\Users\rooho\AppData\Local\Temp\flink-netty-shuffle-ea07b455-1004-444c-abe5-c301947019d4 for spill files.
+2020-12-02 21:46:43,976 INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool  - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2020-12-02 21:46:43,990 INFO  org.apache.flink.runtime.io.network.NettyShuffleEnvironment   - Starting the network environment and its components.
+2020-12-02 21:46:43,994 INFO  org.apache.flink.runtime.taskexecutor.KvStateService          - Starting the kvState service and its components.
+2020-12-02 21:46:43,994 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation      - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2020-12-02 21:46:44,008 INFO  org.apache.flink.runtime.taskexecutor.TaskManagerConfiguration  - Messages have a max timeout of 10000 ms
+2020-12-02 21:46:44,066 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService              - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/taskmanager_0 .
+2020-12-02 21:46:44,086 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Start job leader service.
+2020-12-02 21:46:44,090 INFO  org.apache.flink.runtime.filecache.FileCache                  - User file cache uses directory C:\Users\rooho\AppData\Local\Temp\flink-dist-cache-4ee5f92e-b0e8-4fc4-8407-afbf184a8859
+2020-12-02 21:46:44,178 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint    - Starting rest endpoint.
+2020-12-02 21:46:44,525 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - Log file environment variable 'log.file' is not set.
+2020-12-02 21:46:44,526 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'Key: 'web.log.path' , default: null (fallback keys: [{key=jobmanager.web.log.path, isDeprecated=true}])'.
+2020-12-02 21:46:46,349 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint    - Rest endpoint listening at localhost:12533
+2020-12-02 21:46:46,367 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Proposing leadership to contender http://localhost:12533
+2020-12-02 21:46:46,369 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint    - Web frontend listening at http://localhost:12533.
+2020-12-02 21:46:46,370 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint    - http://localhost:12533 was granted leadership with leaderSessionID=bc9a395b-3bc7-4cdf-b3c1-664e220010cf
+2020-12-02 21:46:46,370 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Received confirmation of leadership for leader http://localhost:12533 , session=bc9a395b-3bc7-4cdf-b3c1-664e220010cf
+2020-12-02 21:46:46,384 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService              - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/resourcemanager .
+2020-12-02 21:46:46,404 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Proposing leadership to contender LeaderContender: DefaultDispatcherRunner
+2020-12-02 21:46:46,404 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Proposing leadership to contender LeaderContender: StandaloneResourceManager
+2020-12-02 21:46:46,408 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - ResourceManager akka://flink/user/resourcemanager was granted leadership with fencing token be33c957a8de0862fe709f9b83cb452b
+2020-12-02 21:46:46,447 INFO  org.apache.flink.runtime.minicluster.MiniCluster              - Flink Mini Cluster started successfully
+2020-12-02 21:46:46,448 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerImpl  - Starting the SlotManager.
+2020-12-02 21:46:46,449 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess  - Start SessionDispatcherLeaderProcess.
+2020-12-02 21:46:46,452 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Received confirmation of leadership for leader akka://flink/user/resourcemanager , session=fe709f9b-83cb-452b-be33-c957a8de0862
+2020-12-02 21:46:46,452 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess  - Recover all persisted job graphs.
+2020-12-02 21:46:46,453 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess  - Successfully recovered 0 persisted job graphs.
+2020-12-02 21:46:46,454 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Connecting to ResourceManager akka://flink/user/resourcemanager(be33c957a8de0862fe709f9b83cb452b).
+2020-12-02 21:46:46,461 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService              - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/dispatcher .
+2020-12-02 21:46:46,470 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Resolved ResourceManager address, beginning registration
+2020-12-02 21:46:46,471 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Registration at ResourceManager attempt 1 (timeout=100ms)
+2020-12-02 21:46:46,481 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Received confirmation of leadership for leader akka://flink/user/dispatcher , session=5325a8ff-39c2-45db-9e70-fcf3e4e3281c
+2020-12-02 21:46:46,481 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - Registering TaskManager with ResourceID 10a71a29-e982-44b9-9580-4d69dde27c8d (akka://flink/user/taskmanager_0) at ResourceManager
+2020-12-02 21:46:46,486 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Successful registration at resource manager akka://flink/user/resourcemanager under registration id a95f636494bd4e34b405a893f31808d2.
+2020-12-02 21:46:46,491 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher      - Received JobGraph submission a0391bd6f54ed4c4c726a6f905cf7470 (FlinkWordCountProcess).
+2020-12-02 21:46:46,492 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher      - Submitting job a0391bd6f54ed4c4c726a6f905cf7470 (FlinkWordCountProcess).
+2020-12-02 21:46:46,520 INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService              - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/jobmanager_1 .
+2020-12-02 21:46:46,533 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Initializing job FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470).
+2020-12-02 21:46:46,551 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Using restart back off time strategy NoRestartBackoffTimeStrategy for FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470).
+2020-12-02 21:46:46,603 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Running initialization on master for job FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470).
+2020-12-02 21:46:46,603 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Successfully ran initialization on master in 0 ms.
+2020-12-02 21:46:46,645 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,662 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy  - Start building failover regions.
+2020-12-02 21:46:46,663 INFO  org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy  - Created 1 failover regions.
+2020-12-02 21:46:46,663 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionStrategy@7189c for FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470).
+2020-12-02 21:46:46,668 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Proposing leadership to contender akka://flink/user/jobmanager_1
+2020-12-02 21:46:46,669 INFO  org.apache.flink.runtime.jobmaster.JobManagerRunnerImpl       - JobManager runner for job FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470) was granted leadership with session id 46ec0f07-fe35-42e0-94f0-7f606c44fcd7 at akka://flink/user/jobmanager_1.
+2020-12-02 21:46:46,675 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Starting execution of job FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470) under job master id 94f07f606c44fcd746ec0f07fe3542e0.
+2020-12-02 21:46:46,678 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.EagerSchedulingStrategy]
+2020-12-02 21:46:46,679 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Job FlinkWordCountProcess (a0391bd6f54ed4c4c726a6f905cf7470) switched from state CREATED to RUNNING.
+2020-12-02 21:46:46,690 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) switched from CREATED to SCHEDULED.
+2020-12-02 21:46:46,690 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) switched from CREATED to SCHEDULED.
+2020-12-02 21:46:46,691 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) switched from CREATED to SCHEDULED.
+2020-12-02 21:46:46,691 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) switched from CREATED to SCHEDULED.
+2020-12-02 21:46:46,691 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) switched from CREATED to SCHEDULED.
+2020-12-02 21:46:46,708 INFO  org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImpl      - Cannot serve slot request, no ResourceManager connected. Adding as pending request [SlotRequestId{2e0b840af4984e55e2e1450abcdcf5ba}]
+2020-12-02 21:46:46,722 INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService  - Received confirmation of leadership for leader akka://flink/user/jobmanager_1 , session=46ec0f07-fe35-42e0-94f0-7f606c44fcd7
+2020-12-02 21:46:46,722 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Connecting to ResourceManager akka://flink/user/resourcemanager(be33c957a8de0862fe709f9b83cb452b)
+2020-12-02 21:46:46,728 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Resolved ResourceManager address, beginning registration
+2020-12-02 21:46:46,729 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - Registration at ResourceManager attempt 1 (timeout=100ms)
+2020-12-02 21:46:46,731 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - Registering job manager 94f07f606c44fcd746ec0f07fe3542e0@akka://flink/user/jobmanager_1 for job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,742 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - Registered job manager 94f07f606c44fcd746ec0f07fe3542e0@akka://flink/user/jobmanager_1 for job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,744 INFO  org.apache.flink.runtime.jobmaster.JobMaster                  - JobManager successfully registered at ResourceManager, leader id: be33c957a8de0862fe709f9b83cb452b.
+2020-12-02 21:46:46,744 INFO  org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImpl      - Requesting new slot [SlotRequestId{2e0b840af4984e55e2e1450abcdcf5ba}] and profile ResourceProfile{UNKNOWN} from resource manager.
+2020-12-02 21:46:46,746 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - Request slot with profile ResourceProfile{UNKNOWN} for job a0391bd6f54ed4c4c726a6f905cf7470 with allocation id d081f186b5b5a578ad50a72daca897eb.
+2020-12-02 21:46:46,749 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Receive slot request d081f186b5b5a578ad50a72daca897eb for job a0391bd6f54ed4c4c726a6f905cf7470 from resource manager with leader id be33c957a8de0862fe709f9b83cb452b.
+2020-12-02 21:46:46,756 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Allocated slot for d081f186b5b5a578ad50a72daca897eb.
+2020-12-02 21:46:46,756 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Add job a0391bd6f54ed4c4c726a6f905cf7470 for job leader monitoring.
+2020-12-02 21:46:46,758 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Try to register at job manager akka://flink/user/jobmanager_1 with leader id 46ec0f07-fe35-42e0-94f0-7f606c44fcd7.
+2020-12-02 21:46:46,760 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Resolved JobManager address, beginning registration
+2020-12-02 21:46:46,760 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Registration at JobManager attempt 1 (timeout=100ms)
+2020-12-02 21:46:46,762 INFO  org.apache.flink.runtime.taskexecutor.JobLeaderService        - Successful registration at job manager akka://flink/user/jobmanager_1 for job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,763 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Establish JobManager connection for job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,766 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Offer reserved slots to the leader of job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,776 INFO  org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImpl      - Requesting new slot [SlotRequestId{df6e1b04aeb57de4ef45313a104ef72d}] and profile ResourceProfile{UNKNOWN} from resource manager.
+2020-12-02 21:46:46,776 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager  - Request slot with profile ResourceProfile{UNKNOWN} for job a0391bd6f54ed4c4c726a6f905cf7470 with allocation id 071f086f5f23a4d9f377af01da4161e1.
+2020-12-02 21:46:46,777 INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl  - Activate slot d081f186b5b5a578ad50a72daca897eb.
+2020-12-02 21:46:46,777 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Receive slot request 071f086f5f23a4d9f377af01da4161e1 for job a0391bd6f54ed4c4c726a6f905cf7470 from resource manager with leader id be33c957a8de0862fe709f9b83cb452b.
+2020-12-02 21:46:46,777 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Allocated slot for 071f086f5f23a4d9f377af01da4161e1.
+2020-12-02 21:46:46,777 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Offer reserved slots to the leader of job a0391bd6f54ed4c4c726a6f905cf7470.
+2020-12-02 21:46:46,779 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) switched from SCHEDULED to DEPLOYING.
+2020-12-02 21:46:46,779 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying Source: Socket Stream (1/1) (attempt #0) to 10a71a29-e982-44b9-9580-4d69dde27c8d @ 127.0.0.1 (dataPort=-1)
+2020-12-02 21:46:46,784 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) switched from SCHEDULED to DEPLOYING.
+2020-12-02 21:46:46,784 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying Filter -> Flat Map -> Map (1/2) (attempt #0) to 10a71a29-e982-44b9-9580-4d69dde27c8d @ 127.0.0.1 (dataPort=-1)
+2020-12-02 21:46:46,785 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) switched from SCHEDULED to DEPLOYING.
+2020-12-02 21:46:46,786 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying Filter -> Flat Map -> Map (2/2) (attempt #0) to 10a71a29-e982-44b9-9580-4d69dde27c8d @ 127.0.0.1 (dataPort=-1)
+2020-12-02 21:46:46,786 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) switched from SCHEDULED to DEPLOYING.
+2020-12-02 21:46:46,786 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying KeyedProcess -> Sink: Print to Std. Err (1/2) (attempt #0) to 10a71a29-e982-44b9-9580-4d69dde27c8d @ 127.0.0.1 (dataPort=-1)
+2020-12-02 21:46:46,787 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) switched from SCHEDULED to DEPLOYING.
+2020-12-02 21:46:46,787 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Deploying KeyedProcess -> Sink: Print to Std. Err (2/2) (attempt #0) to 10a71a29-e982-44b9-9580-4d69dde27c8d @ 127.0.0.1 (dataPort=-1)
+2020-12-02 21:46:46,809 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Received task Source: Socket Stream (1/1).
+2020-12-02 21:46:46,811 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) switched from CREATED to DEPLOYING.
+2020-12-02 21:46:46,812 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) [DEPLOYING]
+2020-12-02 21:46:46,818 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) [DEPLOYING].
+2020-12-02 21:46:46,821 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) [DEPLOYING].
+2020-12-02 21:46:46,830 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Received task Filter -> Flat Map -> Map (1/2).
+2020-12-02 21:46:46,831 INFO  org.apache.flink.runtime.taskmanager.Task                     - Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) switched from CREATED to DEPLOYING.
+2020-12-02 21:46:46,831 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) [DEPLOYING]
+2020-12-02 21:46:46,832 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) [DEPLOYING].
+2020-12-02 21:46:46,834 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) [DEPLOYING].
+2020-12-02 21:46:46,834 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Received task Filter -> Flat Map -> Map (2/2).
+2020-12-02 21:46:46,835 INFO  org.apache.flink.runtime.taskmanager.Task                     - Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) switched from CREATED to DEPLOYING.
+2020-12-02 21:46:46,836 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) [DEPLOYING]
+2020-12-02 21:46:46,836 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) [DEPLOYING].
+2020-12-02 21:46:46,838 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) [DEPLOYING].
+2020-12-02 21:46:46,840 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Received task KeyedProcess -> Sink: Print to Std. Err (1/2).
+2020-12-02 21:46:46,840 INFO  org.apache.flink.runtime.taskmanager.Task                     - KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) switched from CREATED to DEPLOYING.
+2020-12-02 21:46:46,841 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) [DEPLOYING]
+2020-12-02 21:46:46,841 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) [DEPLOYING].
+2020-12-02 21:46:46,842 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) [DEPLOYING].
+2020-12-02 21:46:46,844 INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor            - Received task KeyedProcess -> Sink: Print to Std. Err (2/2).
+2020-12-02 21:46:46,845 INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl  - Activate slot 071f086f5f23a4d9f377af01da4161e1.
+2020-12-02 21:46:46,845 INFO  org.apache.flink.runtime.taskmanager.Task                     - KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) switched from CREATED to DEPLOYING.
+2020-12-02 21:46:46,845 INFO  org.apache.flink.runtime.taskmanager.Task                     - Creating FileSystem stream leak safety net for task KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) [DEPLOYING]
+2020-12-02 21:46:46,845 INFO  org.apache.flink.runtime.taskmanager.Task                     - Loading JAR files for task KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) [DEPLOYING].
+2020-12-02 21:46:46,846 INFO  org.apache.flink.runtime.taskmanager.Task                     - Registering task at network: KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) [DEPLOYING].
+2020-12-02 21:46:46,864 INFO  org.apache.flink.runtime.taskmanager.Task                     - KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,864 INFO  org.apache.flink.runtime.taskmanager.Task                     - Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,864 INFO  org.apache.flink.runtime.taskmanager.Task                     - KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,864 INFO  org.apache.flink.runtime.taskmanager.Task                     - Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,864 INFO  org.apache.flink.runtime.taskmanager.Task                     - Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,865 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,866 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,866 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,865 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,865 INFO  org.apache.flink.streaming.runtime.tasks.StreamTask           - No state backend has been configured, using default (Memory / JobManager) MemoryStateBackend (data in heap memory / checkpoints to JobManager) (checkpoints: 'null', savepoints: 'null', asynchronous: TRUE, maxStateSize: 5242880)
+2020-12-02 21:46:46,867 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (1/2) (6e72289911afadabe2ad43e9b64d1471) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,867 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Source: Socket Stream (1/1) (6f4f31f5574e7144d64dd687e6e21e1e) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - KeyedProcess -> Sink: Print to Std. Err (2/2) (f4ab93ad47291fee90743793a1377b28) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (2/2) (3bd0c40ccd0e1820060b6221d37aa4cf) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,868 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph        - Filter -> Flat Map -> Map (1/2) (cfa5f324897d9ffa517b9d5b63163890) switched from DEPLOYING to RUNNING.
+2020-12-02 21:46:46,931 INFO  org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction  - Connecting to server socket node1:9999
+2020-12-02 21:46:46,952 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.
+2020-12-02 21:46:46,952 INFO  org.apache.flink.runtime.state.heap.HeapKeyedStateBackend     - Initializing heap keyed state backend with stream factory.

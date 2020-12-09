@@ -39,7 +39,7 @@ public class SecStockHbaseFunction implements AllWindowFunction<StockBean, List<
         List<Put> puts = new ArrayList<>();
 
         for (StockBean value : values) {
-            //设置rowkey，rowkey设计规则是证券代码SecCode+交易时间
+            //VITAL: 设置rowkey，rowkey设计规则是证券代码SecCode+交易时间
             String rowkey = value.getSecCode() + value.getTradeTime();
             String string = JSON.toJSONString(value);
             Put put = new Put(rowkey.getBytes());

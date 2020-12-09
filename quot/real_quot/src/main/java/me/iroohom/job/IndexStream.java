@@ -126,7 +126,7 @@ public class IndexStream {
         new IndexMinTask().process(watermarksData);
 
         //分时行情备份至HDFS
-//        new IndexMinHdfsTask().process(watermarksData);
+        new IndexMinHdfsTask().process(watermarksData);
 
         //指数K线存入MySQL
 //        new IndexKlineTask().process(watermarksData);

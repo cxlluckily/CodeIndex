@@ -29,7 +29,7 @@ public class StockPutHdfsMap extends RichMapFunction<StockBean, String> {
      * 4.封装字符串数据
      * <p>
      * 字符串拼装字段顺序：
-     * Timestamp|date|secCode|secName|preClosePrice|openPirce|highPrice|
+     * Timestamp|date|secCode|secName|preClosePrice|openPrice|highPrice|
      * lowPrice|closePrice|tradeVol|tradeAmt|tradeVolDay|tradeAmtDay|source
      */
     @Override
