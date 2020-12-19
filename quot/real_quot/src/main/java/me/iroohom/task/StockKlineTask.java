@@ -43,7 +43,7 @@ public class StockKlineTask implements ProcessDataInterface {
      */
 
     @Override
-    public void process(DataStream<CleanBean> waterData) {
+    public void   process(DataStream<CleanBean> waterData) {
 
         //周K侧边流存储周K数据
         OutputTag<StockBean> weekOpt = new OutputTag<>("weekOpt", TypeInformation.of(StockBean.class));

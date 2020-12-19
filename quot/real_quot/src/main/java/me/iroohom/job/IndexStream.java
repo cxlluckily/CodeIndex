@@ -120,7 +120,7 @@ public class IndexStream {
          */
 
         //指数秒级行情，写入Hbase
-//        new IndexSecTask().process(watermarksData);
+       new IndexSecTask().process(watermarksData);
 
         //指数分时行情 写入Druid和Kafka TODO: 已测试 已知问题 Druid中index_stream_sse表tradeVol成批量数据一样
         new IndexMinTask().process(watermarksData);

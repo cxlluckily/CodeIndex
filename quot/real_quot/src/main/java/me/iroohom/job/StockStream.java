@@ -7,16 +7,17 @@ import me.iroohom.bean.CleanBean;
 import me.iroohom.config.QuotConfig;
 import me.iroohom.map.SseMap;
 import me.iroohom.map.SzseMap;
-import me.iroohom.task.StockIncreaseTask;
-import me.iroohom.task.StockMinHdfsTask;
-import me.iroohom.task.StockMinuteTask;
-import me.iroohom.task.StockSecTask;
+import me.iroohom.task.*;
 import me.iroohom.util.QuotUtil;
 import org.apache.flink.api.common.functions.FilterFunction;
+import org.apache.flink.api.common.restartstrategy.RestartStrategies;
+import org.apache.flink.runtime.state.filesystem.FsStateBackend;
+import org.apache.flink.streaming.api.CheckpointingMode;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
+import org.apache.flink.streaming.api.environment.CheckpointConfig;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;
 import org.apache.flink.streaming.api.windowing.time.Time;
@@ -56,18 +57,18 @@ public class StockStream {
         env.setParallelism(1);
 
         //在开发时，检查点开了没啥用，所以关闭，但生产环境一定是需要开启的
-//        env.enableCheckpointing(5000L);
-//        env.setStateBackend(new FsStateBackend("hdfs://node01:8020/checkpoint/stock"));
-//        //设置强一致性
-//        env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
-//        //设置检查点制作失败，任务继续进行
-//        env.getCheckpointConfig().setFailOnCheckpointingErrors(false);
-//        //设置最大线程数
-//        env.getCheckpointConfig().setMaxConcurrentCheckpoints(1);
-//        //任务取消的时候，保留检查点，需要手动删除老的检查点
-//        env.getCheckpointConfig().enableExternalizedCheckpoints(CheckpointConfig.ExternalizedCheckpointCleanup.DELETE_ON_CANCELLATION);
-//        //设置重启机制
-//        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, Time.seconds(5)));
+        env.enableCheckpointing(5000L);
+        env.setStateBackend(new FsStateBackend("hdfs://node01:8020/checkpoint/stock"));
+        //设置强一致性
+        env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
+        //设置检查点制作失败，任务继续进行
+        env.getCheckpointConfig().setFailOnCheckpointingErrors(false);
+        //设置最大线程数
+        env.getCheckpointConfig().setMaxConcurrentCheckpoints(1);
+        //任务取消的时候，保留检查点，需要手动删除老的检查点
+        env.getCheckpointConfig().enableExternalizedCheckpoints(CheckpointConfig.ExternalizedCheckpointCleanup.DELETE_ON_CANCELLATION);
+        //设置重启机制
+        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, 5000));
 //
         //整合Kafka
         Properties properties = new Properties();
@@ -133,7 +134,7 @@ public class StockStream {
          * 3.分时行情备份（掌握）
          * 4.个股涨幅榜（60s）
          */
-//
+
         //秒级行情，写入Hbase TODO: 秒级SinkHbase已测试
         new StockSecTask().process(watermarksData);
         //分时行情（60s），数据写入Druid和Kafka TODO:分时SinkDruid SinkKafka 已测试
@@ -142,6 +143,9 @@ public class StockStream {
         new StockMinHdfsTask().process(watermarksData);
         //个股涨幅榜，数据写入Kafka  TODO:个股涨幅 SinkKafka 已测试
         new StockIncreaseTask().process(watermarksData);
+
+        //个股K线 存入MySQL
+        new StockKlineTask().process(watermarksData);
 
         env.execute("Stock Stream");
     }

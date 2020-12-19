@@ -7,6 +7,7 @@ import me.iroohom.function.MinIndexWindowFunction;
 import me.iroohom.inter.ProcessDataInterface;
 import me.iroohom.map.IndexPutHdfsMap;
 import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.functions.sink.filesystem.StreamingFileSink;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.connectors.fs.StringWriter;
 import org.apache.flink.streaming.connectors.fs.bucketing.BucketingSink;
@@ -46,7 +47,7 @@ public class IndexMinHdfsTask implements ProcessDataInterface {
 
         //数据分组
         waterData.keyBy(new KeyFunction())
-                .timeWindow(Time.seconds(1))
+                .timeWindow(Time.minutes(1))
                 .apply(new MinIndexWindowFunction())
                 .map(new IndexPutHdfsMap())
                 .addSink(bucketingSink)

@@ -131,13 +131,12 @@ public class SectorStream {
         new SectorMinTask().process(watermarksData);
 
         //分时行情备份至HDFS
-//        new SectorMinHdfsTask().process(watermarksData);
+        new SectorMinHdfsTask().process(watermarksData);
 
-        //个股K线 存入MySQL
-//        new StockKlineTask().process(watermarksData);
+
 
         //板块K线 存入MySQL
-//        new SectorKlineTask().process(watermarksData);
+        new SectorKlineTask().process(watermarksData);
 
         env.execute("Sector Stream");
     }

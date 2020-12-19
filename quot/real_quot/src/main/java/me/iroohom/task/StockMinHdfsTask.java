@@ -59,6 +59,7 @@ public class StockMinHdfsTask implements ProcessDataInterface {
                 .apply(new MinStockWindowFunction())
                 .map(new StockPutHdfsMap())
                 .addSink(bucketingSink);
+
     }
 }
 

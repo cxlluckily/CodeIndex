@@ -22,6 +22,7 @@ import org.apache.flink.util.Collector;
 public class MinStockWindowFunction extends RichWindowFunction<CleanBean, StockBean, String, TimeWindow> {
 
     MapState<String, StockBean> stockMs = null;
+
     /**
      * @param parameters
      * @throws Exception
