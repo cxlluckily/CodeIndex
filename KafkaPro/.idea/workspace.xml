@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6012adf-0212-4ab2-8697-b703d9240c13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/CodeIndex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KafkaPro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka/KafkaPro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/start/WriteDataToKafka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/kafka/KafkaPro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/start/WriteDataToKafka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_test/spark_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_test/src/test/java/KuduScan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/deleteKuduData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkKuduDataDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkKuduDataDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/data/kuduDataDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/data/kuduDataDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/table/kuduTableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/table/kuduTableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spark/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spark/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spark/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spark/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spark/Spark-realtime-train/Spark-realtime-train.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spark/Spark-structuredStreaming/Spark-structuredStreaming.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logistics-parent/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logistics-parent/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot-1028/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quot-1028/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot-1028/real_quot/src/main/java/cn/itcast/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot-1028/real_quot/src/main/java/cn/itcast/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot-1028/real_quot/src/main/java/cn/itcast/job/StockStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot-1028/real_quot/src/main/java/cn/itcast/job/StockStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot-web/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quot-web/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot-web/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quot-web/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/function/SectorWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/function/SectorWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/map/StockKlineMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/map/StockKlineMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/task/StockKlineTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quot/real_quot/src/main/java/me/iroohom/task/StockKlineTask.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_Repository" />
+        <option name="mavenHome" value="D:\Programs\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Programs\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1nhSM9ArRbu0PdOaj2uebmYPhqD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_201/bin/jvisualvm.exe" />
+    <property name="settings.editor.selected.configurable" value="GrepConsole" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kafka" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WriteDataToKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="start.WriteDataToKafka" />
+      <module name="KafkaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WriteDataToKafka" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6012adf-0212-4ab2-8697-b703d9240c13" name="Default Changelist" comment="" />
+      <created>1611840780150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611840780150</updated>
+    </task>
+    <servers />
+  </component>
+</project>

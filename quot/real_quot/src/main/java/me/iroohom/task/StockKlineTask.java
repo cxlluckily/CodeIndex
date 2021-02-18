@@ -43,7 +43,7 @@ public class StockKlineTask implements ProcessDataInterface {
      */
 
     @Override
-    public void   process(DataStream<CleanBean> waterData) {
+    public void process(DataStream<CleanBean> waterData) {
 
         //周K侧边流存储周K数据
         OutputTag<StockBean> weekOpt = new OutputTag<>("weekOpt", TypeInformation.of(StockBean.class));
@@ -78,12 +78,14 @@ public class StockKlineTask implements ProcessDataInterface {
                 /**
                  * The key extractor could return the word as
                  * a key to group all Word objects by the String they contain.
+                 * 根据股票代码来进行分组，提升并行度
                  */
                 .keyBy(new KeySelector<Row, String>() {
                     @Override
                     public String getKey(Row value) throws Exception {
                         return value.getField(2).toString();
                     }
+                    //VITAL: 这里的往MySQL中Sink可以提升并行度来达到优化的目的
                 }).addSink(new SinkMysql(String.format(sql, QuotConfig.config.getProperty("mysql.stock.sql.day.table"))));
 
         //周K
@@ -93,6 +95,7 @@ public class StockKlineTask implements ProcessDataInterface {
                     public String getKey(Row value) throws Exception {
                         return value.getField(2).toString();
                     }
+                    //VITAL: 这里的往MySQL中Sink可以提升并行度来达到优化的目的
                 }).addSink(new SinkMysql(String.format(sql, QuotConfig.config.getProperty("mysql.stock.sql.week.table"))));
 
         //月K
@@ -102,6 +105,7 @@ public class StockKlineTask implements ProcessDataInterface {
                     public String getKey(Row value) throws Exception {
                         return value.getField(2).toString();
                     }
+                    //VITAL: 这里的往MySQL中Sink可以提升并行度来达到优化的目的
                 }).addSink(new SinkMysql(String.format(sql, QuotConfig.config.getProperty("mysql.stock.sql.month.table"))));
     }
 

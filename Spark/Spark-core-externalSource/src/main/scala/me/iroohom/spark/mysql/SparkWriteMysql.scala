@@ -68,6 +68,7 @@ object SparkWriteMysql {
         case (word, count) =>
           pstmt.setString(1, word)
           pstmt.setInt(2, count)
+          //添加到批中去
           pstmt.addBatch()
       }
 
@@ -77,12 +78,12 @@ object SparkWriteMysql {
       conn.setAutoCommit(false)
 
       /**
-       * TODO:批量插入
+       * VITAL:批量插入
        */
       pstmt.executeBatch()
 
       /**
-       * TODO：手动提交事务，执行批量插入
+       * VITAL：手动提交事务，执行批量插入
        */
       conn.commit()
 

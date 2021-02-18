@@ -63,13 +63,14 @@ object SparkKuduDataDemo {
       .master("local[2]")
       .appName(this.getClass.getSimpleName.stripSuffix("$"))
       .config("spark.sql.shuffle.partitions", "4")
+      .config("spark.port.maxRetries","100")
       .getOrCreate()
     import spark.implicits._
 
     //创建KuduContext对象
-    val kuduContext = new KuduContext("node2:7051", spark.sparkContext)
+    val kuduContext = new KuduContext("node1:7051", spark.sparkContext)
 
-    val tableName = "new-users"
+    val tableName = "uni_ids"
 
 
     // 插入数据
@@ -85,7 +86,7 @@ object SparkKuduDataDemo {
     //upsertData(spark, kuduContext, tableName)
 
     // 删除数据
-    //deleteData(spark, kuduContext, tableName)
+//    deleteData(spark, kuduContext, tableName)
 
     spark.stop()
   }

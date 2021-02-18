@@ -25,7 +25,7 @@ public class kuduTableDemo {
      */
     @Before
     public void init() {
-        kuduClient = new KuduClient.KuduClientBuilder("node2:7051")
+        kuduClient = new KuduClient.KuduClientBuilder("node1:7051")
                 .defaultSocketReadTimeoutMs(6000)
                 .build();
     }
@@ -192,13 +192,11 @@ public class kuduTableDemo {
     @Test
     public void alterKuduTableAddColumn() throws KuduException {
         AlterTableOptions tableOptions = new AlterTableOptions();
-        tableOptions.addColumn("gender", Type.BOOL,true);
+        tableOptions.addColumn("gender", Type.BOOL, true);
 
         AlterTableResponse response = kuduClient.alterTable("users", tableOptions);
         System.out.println(response.getTableId());
     }
-
-
 
 
     /**
@@ -208,11 +206,13 @@ public class kuduTableDemo {
      */
     @Test
     public void deleteKuduTable() throws KuduException {
+
         //判断是否先存在
-        if (kuduClient.tableExists("users")) {
-            DeleteTableResponse response = kuduClient.deleteTable("users");
+        if (kuduClient.tableExists("tabnlename")) {
+            DeleteTableResponse response = kuduClient.deleteTable("tablename");
             System.out.println(response.getElapsedMillis());
         }
+
     }
 
 

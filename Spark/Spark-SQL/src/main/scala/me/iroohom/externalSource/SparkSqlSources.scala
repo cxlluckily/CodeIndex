@@ -60,8 +60,8 @@ object SparkSqlSources {
         "roohom.top10movies", //
         props
       )
-//    ratingsFromMysqlDF.printSchema()
-//    ratingsFromMysqlDF.show(10, truncate = false)
+    //    ratingsFromMysqlDF.printSchema()
+    //    ratingsFromMysqlDF.show(10, truncate = false)
 
     /**
      * TODO：读取MySQL数据，标准格式写法

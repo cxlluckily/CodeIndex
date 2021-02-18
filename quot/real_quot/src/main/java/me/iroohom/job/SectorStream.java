@@ -125,15 +125,13 @@ public class SectorStream {
          */
 //
         //秒级行情，写入Hbase
-//        new SectorSecTask().process(watermarksData);
+        new SectorSecTask().process(watermarksData);
 
         //分时行情（60s），数据写入Druid和Kafka TODO:已测试 只测试沪市数据 所以不需要开启深市数据的kafka消费 tradeVol和tradeAmt有负值
         new SectorMinTask().process(watermarksData);
 
         //分时行情备份至HDFS
         new SectorMinHdfsTask().process(watermarksData);
-
-
 
         //板块K线 存入MySQL
         new SectorKlineTask().process(watermarksData);

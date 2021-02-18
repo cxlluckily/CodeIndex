@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="real_quot" />
-        <module name="Avro" />
-        <module name="Kylin" />
         <module name="producer" />
+        <module name="Kylin" />
+        <module name="Avro" />
+        <module name="real_quot" />
       </profile>
     </annotationProcessing>
   </component>

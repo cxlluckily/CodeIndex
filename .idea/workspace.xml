@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="08d33d18-3087-4f8e-8391-46f542b23298" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot-1028/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quot-1028/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot-1028/real_quot/src/main/java/cn/itcast/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot-1028/real_quot/src/main/java/cn/itcast/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot-1028/real_quot/src/main/java/cn/itcast/job/StockStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot-1028/real_quot/src/main/java/cn/itcast/job/StockStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quot/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/function/SectorWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/function/SectorWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/job/SectorStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/job/SectorStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/map/StockKlineMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/map/StockKlineMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/task/StockKlineTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/quot/real_quot/src/main/java/me/iroohom/task/StockKlineTask.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_Repository" />
+        <option name="mavenHome" value="D:/Programs/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Programs\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1mluIkCOeSUGk1nvB1hd7qRup85" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_201/bin/jvisualvm.exe" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08d33d18-3087-4f8e-8391-46f542b23298" name="Default Changelist" comment="" />
+      <created>1610080420940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610080420940</updated>
+      <workItem from="1610080423928" duration="70000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

@@ -105,7 +105,7 @@ public class kuduDataDemo {
      */
     @Test
     public void selectKuduData() throws KuduException {
-        KuduTable kuduTable = kuduClient.openTable("users");
+        KuduTable kuduTable = kuduClient.openTable("unit_stu_info_new_3");
         //查询数据，扫描全表，查询所有数据
         KuduScanner.KuduScannerBuilder kuduScannerBuilder = kuduClient.newScannerBuilder(kuduTable);
         //扫描出数据
@@ -121,8 +121,8 @@ public class kuduDataDemo {
                 RowResult rowResult = rowResults.next();
                 int id = rowResult.getInt("id");
                 String name = rowResult.getString("name");
-                byte age = rowResult.getByte("age");
-                System.out.println("id = " + id + ", name = " + name + ", age = " + age);
+//                byte age = rowResult.getByte("age");
+                System.out.println("id = " + id + ", name = " + name);
             }
         }
     }
@@ -142,7 +142,7 @@ public class kuduDataDemo {
         ArrayList<String> columnNames = new ArrayList<String>();
         columnNames.add("id");
 //        columnNames.add("name");
-        columnNames.add("age");
+        columnNames.add("name");
         kuduScannerBuilder.setProjectedColumnNames(columnNames);
 
         KuduPredicate kuduPredicateId = KuduPredicate.newComparisonPredicate(
@@ -151,7 +151,7 @@ public class kuduDataDemo {
                 1020
         );
         KuduPredicate kuduPredicateAge = KuduPredicate.newComparisonPredicate(
-                newColunmnSchema("age", Type.INT8, false),
+                newColunmnSchema("name", Type.INT8, false),
                 KuduPredicate.ComparisonOp.LESS,
                 (byte) 23
         );
@@ -169,9 +169,9 @@ public class kuduDataDemo {
             while (rowResults.hasNext()) {
                 RowResult rowResult = rowResults.next();
                 int id = rowResult.getInt("id");
-//                String name = rowResult.getString("name");
+                String name = rowResult.getString("name");
                 byte age = rowResult.getByte("age");
-                System.out.println("id = " + id + ", name = " + " " + ", age = " + age);
+                System.out.println("id = " + id + ", name = " + name);
             }
         }
     }
@@ -217,7 +217,7 @@ public class kuduDataDemo {
         Delete delete = kuduTable.newDelete();
         PartialRow deleteRow = delete.getRow();
         deleteRow.addInt("id", 1002);
-        deleteRow.addByte("age",(byte)20);
+        deleteRow.addByte("age", (byte) 20);
 
         //执行删除
         kuduSession.apply(delete);

@@ -40,11 +40,11 @@ public class SectorWindowFunction extends RichAllWindowFunction<StockBean, Secto
 
     @Override
     public void open(Configuration parameters) throws Exception {
-        //查询板块个股对应关系
+        //查询板块个股对应关系 VITAL: 优化： 这里是全表查询，涉及的数据可能会非常大，查询之后会非常占用内存，可以考虑构建定时任务，每天在九点之前把MySQL数据定时同步到Redis
         String sql = "SELECT *  FROM bdp_sector_stock where sec_abbr = 'ss'";
         sectorStockMap = DbUtil.queryForGroup("sector_code", sql);
 
-        //最近交易日日K
+        //最近交易日日K VITAL: 优化： 这里是全表查询，涉及的数据可能会非常大，查询之后会非常占用内存，可以考虑构建定时任务，每天在九点之前把MySQL数据定时同步到Redis
         String sqlKline = "SELECT * FROM bdp_quot_sector_kline_day WHERE trade_date  = (SELECT trade_date FROM tcc_date WHERE trade_date < CURDATE() ORDER BY trade_date DESC LIMIT 1 )";
         sectorKlineMap = DbUtil.query("sector_code", sqlKline);
 

@@ -1,4 +1,4 @@
-package me.iroohom.job;
+package cn.itcast.job;
 
 import me.iroohom.avro.AvroDeserializationSchema;
 import me.iroohom.avro.SseAvro;
