@@ -1,0 +1,6 @@
+me\iroohom\kafkalog\KafkaAppender.class
+me\iroohom\bean\MessageBean.class
+me\iroohom\common\logconvert\AppNameLayOut.class
+me\iroohom\constant\SystemConstant.class
+me\iroohom\common\logconvert\AppNameConvert.class
+me\iroohom\transform\AppIdTransform.class

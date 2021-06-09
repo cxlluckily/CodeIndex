@@ -1,6 +1,5 @@
 package me.iroohom.sink;
 
-import me.iroohom.bean.StockBean;
 import me.iroohom.util.DbUtil;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;

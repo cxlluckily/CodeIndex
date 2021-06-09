@@ -10,7 +10,7 @@ object SparkSQLHive {
       .master("local[2]")
       .config("spark.sql.shuffle.partitions", "4")
       .enableHiveSupport()
-      .config("hive.metastore.uris", "thrift://node1.itcast.cn:9083")
+      .config("hive.metastore.uris", "thrift://node1:9083")
       .getOrCreate()
 
     import spark.implicits._

@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="logistics-etl" />
+        <module name="logistics-offline" />
         <module name="logistics-generate" />
         <module name="logistics-common" />
-        <module name="logistics-offline" />
+        <module name="logistics-etl" />
       </profile>
     </annotationProcessing>
   </component>

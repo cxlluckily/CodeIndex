@@ -38,8 +38,8 @@ object SparkRDDSchema {
       Array(
         StructField("userId", StringType, nullable = true),
         StructField("itemId", StringType, nullable = true),
-        StructField("rating", DoubleType, nullable = true)
-        , StructField("timestamp", LongType, nullable = true)
+        StructField("rating", DoubleType, nullable = true),
+        StructField("timestamp", LongType, nullable = true)
       )
     )
     /**
@@ -56,7 +56,6 @@ object SparkRDDSchema {
 
     println("================================================================")
     val ratingDF2: DataFrame = ratingDS.toDF()
-
 
 
     spark.stop()

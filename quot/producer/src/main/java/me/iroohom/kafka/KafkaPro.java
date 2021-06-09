@@ -16,7 +16,6 @@ import java.util.Properties;
  * @Software: IntelliJ IDEA
  */
 //创建类，泛型参数继承avro基类
-//T 表示传入对象是avro类型的对象
 public class KafkaPro<T extends SpecificRecordBase> {
 
     /**

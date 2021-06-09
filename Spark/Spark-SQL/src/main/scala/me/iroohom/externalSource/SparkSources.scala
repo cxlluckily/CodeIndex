@@ -20,8 +20,8 @@ object SparkSources {
      * TODO:读取parquet格式的数据源
      * 在SparkSQL中，当加载读取文件数据时，如果不指定格式，默认是parquet格式数据
      */
-    val parquetSource1: DataFrame = spark.read.format("parquet").load("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\users.parquet")
-    val parquetSource: DataFrame = spark.read.parquet("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\users.parquet")
+    val parquetSource1: DataFrame = spark.read.format("parquet").load("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\users.parquet")
+    val parquetSource: DataFrame = spark.read.parquet("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\users.parquet")
 
     //    parquetSource.printSchema()
     //    parquetSource.show(10, truncate = false)
@@ -31,22 +31,22 @@ object SparkSources {
      * TODO:读取文本格式的数据
      * 无论是 text 还是 textFile 加载文本数据时，字段名称：value, 类型String
      */
-    val data: DataFrame = spark.read.text("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\people.txt")
-    val dataset: Dataset[String] = spark.read.textFile("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\people.txt")
+    val data: DataFrame = spark.read.text("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\people.txt")
+    val dataset: Dataset[String] = spark.read.textFile("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\people.txt")
     //    data.printSchema()
     //    dataset.printSchema()
 
     /**
      * TODO:读取Json格式的数据
      */
-    val jsonData: DataFrame = spark.read.json("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
+    val jsonData: DataFrame = spark.read.json("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
     //    jsonData.printSchema()
     //    jsonData.show(5,truncate = false)
 
     /**
      * TODO:实际开发中，针对JSON格式文本数据，直接使用text/textFile读取，然后解析提取其中字段信息
      */
-    val peopleDS: Dataset[String] = spark.read.textFile("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
+    val peopleDS: Dataset[String] = spark.read.textFile("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
     peopleDS.printSchema()
     peopleDS.show(10, truncate = false)
     //对JSON格式字符串，SparkSQL提供函数：get_json_object, def get_json_object(e: Column, path: String): Column

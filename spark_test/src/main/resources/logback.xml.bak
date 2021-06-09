@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} %app [%thread] %-5level %logger{60} %X{sourceThread} - %msg%n"/>
+
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <!--        <file>${log.file}</file>-->
+        <file>flink.app.log.log</file>
+        <append>false</append>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="me.iroohom.common.loglayout.AppNameLayOut">
+                <pattern>${LOG_PATTERN}</pattern>
+            </layout>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--    <appender name="KafkaAppender" class="com.github.danielwegener.logback.KafkaAppender.KafkaAppender">-->
+    <!--        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">-->
+    <!--            <layout class="me.iroohom.common.loglayout.AppNameLayOut">-->
+    <!--                <pattern>${LOG_PATTERN}</pattern>-->
+    <!--            </layout>-->
+    <!--            <charset>UTF-8</charset>-->
+    <!--        </encoder>-->
+    <!--        <topic>flink-app-logs</topic>-->
+    <!--        <keyingStrategy class="com.github.danielwegener.logback.KafkaAppender.keying.NoKeyKeyingStrategy"/>-->
+    <!--        <deliveryStrategy class="com.github.danielwegener.logback.KafkaAppender.delivery.AsynchronousDeliveryStrategy"/>-->
+    <!--        <producerConfig>bootstrap.servers=192.168.88.161:9092,192.168.88.162:9092,192.168.88.163:9092</producerConfig>-->
+    <!--        <producerConfig>retries=3</producerConfig>-->
+    <!--        <producerConfig>acks=1</producerConfig>-->
+    <!--        <producerConfig>batch-size=16384</producerConfig>-->
+    <!--        <producerConfig>buffer-memory=33554432</producerConfig>-->
+    <!--        <producerConfig>properties.max.request.size==2097152</producerConfig>-->
+    <!--        <producerConfig>linger.ms=1000</producerConfig>-->
+    <!--        <producerConfig>max.block.ms=0</producerConfig>-->
+    <!--    </appender>-->
+
+    <appender name="KafkaAppender" class="me.iroohom.kafkalog.KafkaAppender">
+        <bootstrapServers>192.168.88.161:9092,192.168.88.162:9092,192.168.88.163:9092</bootstrapServers>
+    </appender>
+
+    <appender name="STDOUT"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="kafka_logger">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+
+    <!-- Uncomment this if you want to only change Flink's logging -->
+    <!--<logger name="org.apache.flink" level="INFO">-->
+    <!--<appender-ref ref="file"/>-->
+    <!--</logger>-->
+
+    <!-- The following lines keep the log level of common libraries/connectors on
+         log level INFO. The root logger does not override this. You have to manually
+         change the log levels here. -->
+    <logger name="akka" level="INFO">
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+    <logger name="org.apache.kafka" level="INFO">
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+    <logger name="org.apache.hadoop" level="INFO">
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+    <logger name="org.apache.zookeeper" level="INFO">
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+
+    <!-- Suppress the irrelevant (wrong) warnings from the Netty channel handler -->
+    <logger name="org.apache.flink.shaded.akka.org.jboss.netty.channel.DefaultChannelPipeline" level="ERROR">
+        <appender-ref ref="file"/>
+        <appender-ref ref="KafkaAppender"/>
+    </logger>
+
+
+    <!-- This affects logging for both user code and Flink -->
+    <root level="debug">
+        <appender-ref ref="file"/>
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="KafkaAppender"/>
+        <!--        <appender-ref ref="KafkaAppender"/>-->
+    </root>
+
+
+</configuration>

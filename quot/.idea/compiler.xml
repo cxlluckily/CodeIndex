@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="producer" />
         <module name="Kylin" />
-        <module name="Avro" />
         <module name="real_quot" />
+        <module name="Avro" />
       </profile>
     </annotationProcessing>
   </component>
