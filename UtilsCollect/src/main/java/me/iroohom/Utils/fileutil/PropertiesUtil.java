@@ -1,6 +1,6 @@
 package me.iroohom.Utils.fileutil;
 
-import io.github.ljwlgl.util.StringUtil;
+import me.iroohom.Utils.stringUtil.StringUtil ;
 
 import java.io.*;
 import java.util.Properties;
