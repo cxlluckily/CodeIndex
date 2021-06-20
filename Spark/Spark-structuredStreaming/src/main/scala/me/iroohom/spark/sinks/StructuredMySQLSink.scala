@@ -18,7 +18,7 @@ object StructuredMySQLSink {
 
     val inputStreamDF: DataFrame = spark.readStream
       .format("socket")
-      .option("host", "node1.itcast.cn")
+      .option("host", "node1.roohom.cn")
       .option("port", 9999)
       .load()
 

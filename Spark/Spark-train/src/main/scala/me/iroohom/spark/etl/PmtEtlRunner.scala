@@ -89,7 +89,7 @@ object PmtEtlRunner {
       //TODO: 一定要指定Hive数据源
       .format("hive")
       .partitionBy("date_str")
-      .saveAsTable("itcast_ads.pmt_ads_info")
+      .saveAsTable("roohom_ads.pmt_ads_info")
   }
 
   def main(args: Array[String]): Unit = {

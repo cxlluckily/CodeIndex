@@ -27,7 +27,7 @@ object MockSearchLogs {
         
         // 发送Kafka Topic
         val props = new Properties()
-        props.put("bootstrap.servers", "node1.itcast.cn:9092")
+        props.put("bootstrap.servers", "node1.roohom.cn:9092")
         props.put("acks", "1")
         props.put("retries", "3")
         props.put("key.serializer", classOf[StringSerializer].getName)

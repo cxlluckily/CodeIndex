@@ -4,7 +4,7 @@
 
 	<property>
 		<name>fs.defaultFS</name>
-		<value>hdfs://node1.itcast.cn:8020</value>
+		<value>hdfs://node1.roohom.cn:8020</value>
 	</property>
 	<property>
 		<name>hadoop.tmp.dir</name>

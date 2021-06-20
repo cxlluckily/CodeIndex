@@ -21,7 +21,7 @@ object SparkRDDInferring {
      */
 
     val rawRatingsRDD: RDD[String] = spark.sparkContext
-      .textFile("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.data", minPartitions = 2)
+      .textFile("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.data", minPartitions = 2)
 
     val ratingsRDD: RDD[MovieRating] = rawRatingsRDD
       //过滤数据

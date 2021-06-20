@@ -23,7 +23,7 @@ object SparkSqlSources {
       //自动推荐数据类型，默认为false
       .option("inferSchema", "true")
       //指定文件的路径
-      .csv("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.dat")
+      .csv("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.dat")
     //    ratingsDF.printSchema()
     //    ratingsDF.show(10, truncate = false)
 
@@ -41,7 +41,7 @@ object SparkSqlSources {
       .option("sep", "\t")
       //指定schema
       .schema(schema)
-      .csv("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.data")
+      .csv("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-100k\\u.data")
     //    ratingSchemaDF.printSchema()
     //    ratingSchemaDF.show(10, truncate = false)
 

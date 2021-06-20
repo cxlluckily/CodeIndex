@@ -28,7 +28,7 @@ object StreamKafkaDirect {
 
     // 表示从Kafka Topic读取数据时相关参数设置
     val kafkaParams: Map[String, String] = Map(
-      "bootstrap.servers" -> "node1.itcast.cn:9092",
+      "bootstrap.servers" -> "node1.roohom.cn:9092",
       // 表示从Topic的各个分区的哪个偏移量开始消费数据，设置为最大的偏移量开始消费数据
       "auto.offset.reset" -> "largest"
     )

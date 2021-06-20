@@ -24,7 +24,7 @@ object StructuredContinuous {
     val kafkaStreamDF: DataFrame = spark
       .readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "node1.itcast.cn:9092")
+      .option("kafka.bootstrap.servers", "node1.roohom.cn:9092")
       .option("subscribe", "stationTopic")
       .load()
 

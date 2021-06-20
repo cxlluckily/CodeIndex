@@ -30,7 +30,7 @@ object StreamingTemplate {
       val topic = Array("search-log-topic")
 
       val kafkaParams = Map[String, Object](
-        "bootstrap.servers" -> "node1.itcast.cn:9092",
+        "bootstrap.servers" -> "node1.roohom.cn:9092",
         "key.deserializer" -> classOf[StringDeserializer],
         "value.deserializer" -> classOf[StringDeserializer],
         "group.id" -> "group_id_streaming_0002",

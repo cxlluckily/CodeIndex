@@ -22,7 +22,7 @@ object SparkThriftJDBC {
       Class.forName("org.apache.hive.jdbc.HiveDriver")
 
       conn = DriverManager.getConnection(
-        "jdbc:hive2://node1.itcast.cn:10000/db_hive",
+        "jdbc:hive2://node1.roohom.cn:10000/db_hive",
         "root",
         "123456"
       )

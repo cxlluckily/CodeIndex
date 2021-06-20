@@ -11,7 +11,7 @@ object SparkUdfTest {
       .getOrCreate()
     import spark.implicits._
 
-    val empDF: DataFrame = spark.read.json("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
+    val empDF: DataFrame = spark.read.json("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\resources\\employees.json")
 
     //    empDF.printSchema()
     //    empDF.show(10, truncate = false)

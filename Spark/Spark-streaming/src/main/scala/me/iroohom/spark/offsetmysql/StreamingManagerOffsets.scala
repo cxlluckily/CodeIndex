@@ -28,7 +28,7 @@ object StreamingManagerOffsets {
       val topics = Array("search-log-topic")
       // iii.消费Kafka 数据配置参数
       val kafkaParams = Map[String, Object](
-        "bootstrap.servers" -> "node1.itcast.cn:9092",
+        "bootstrap.servers" -> "node1.roohom.cn:9092",
         "key.deserializer" -> classOf[StringDeserializer],
         "value.deserializer" -> classOf[StringDeserializer],
         "group.id" -> groupId,

@@ -60,7 +60,7 @@ object SparkHbaseSink {
 
     //TODO:调用saveAsNewAPIHadoopFile保存数据到Hbase
     val conf = HBaseConfiguration.create()
-    conf.set("hbase.zookeeper.quorum", "node1.itcast.cn")
+    conf.set("hbase.zookeeper.quorum", "node1.roohom.cn")
     conf.set("hbase.zookeeper.property.clientPort", "2181")
     conf.set("zookeeper.znode.parent", "/hbase")
     // 设置将数据保存的HBase表的名称

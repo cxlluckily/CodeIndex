@@ -13,6 +13,6 @@ $SPARK_HOME/bin/spark-submit \
 --conf spark.dynamicAllocation.maxExecutors=15 \
 --conf spark.dynamicAllocation.executorIdleTimeout=300s \
 --conf spark.dynamicAllocation.schedulerBacklogTimeout=10s \
---class cn.itcast.spark.report.DailyRealTimeOrderReport \
+--class cn.roohom.spark.report.DailyRealTimeOrderReport \
 order-apps.jar
 

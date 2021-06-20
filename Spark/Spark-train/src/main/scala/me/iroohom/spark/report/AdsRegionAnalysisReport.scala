@@ -213,7 +213,7 @@ object AdsRegionAnalysisReport {
       .option("url", ApplicationConfig.MYSQL_JDBC_URL)
       .option("user", ApplicationConfig.MYSQL_JDBC_USERNAME)
       .option("password", ApplicationConfig.MYSQL_JDBC_PASSWORD)
-      .option("dbtable", "itcast_ads_report.ads_region_analysis")
+      .option("dbtable", "roohom_ads_report.ads_region_analysis")
       .save()
   }
 }

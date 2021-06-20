@@ -16,7 +16,7 @@ object SparkTop10Movie {
     import spark.implicits._
 
 
-    val rawRatingsRDD: RDD[String] = spark.sparkContext.textFile("D:\\itcast\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-1m\\ratings.dat", minPartitions = 4)
+    val rawRatingsRDD: RDD[String] = spark.sparkContext.textFile("D:\\roohom\\Spark\\Basic\\spark_day04_20201122\\05_数据\\ml-1m\\ratings.dat", minPartitions = 4)
     //    println(s"Count = ${ratingsRDD.count()}")
     //    println(s"First = ${ratingsRDD.first()}")
 

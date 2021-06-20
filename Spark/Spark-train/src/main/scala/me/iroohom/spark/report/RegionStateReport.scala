@@ -25,7 +25,7 @@ object RegionStateReport {
       .option("url", ApplicationConfig.MYSQL_JDBC_URL)
       .option("user", ApplicationConfig.MYSQL_JDBC_USERNAME)
       .option("password", ApplicationConfig.MYSQL_JDBC_PASSWORD)
-      .option("dbtable", "itcast_ads_report.region_stat_analysis")
+      .option("dbtable", "roohom_ads_report.region_stat_analysis")
       .save()
   }
 
@@ -56,7 +56,7 @@ object RegionStateReport {
         //执行SQL语句 此处使用了ON DUPLICATE语句，表示仅在重复的主键上进行操作
         pstmt = conn.prepareStatement(
           """
-					  |INSERT INTO itcast_ads_report.region_stat_analysis(report_date, province, city, count)
+					  |INSERT INTO roohom_ads_report.region_stat_analysis(report_date, province, city, count)
 					  |VALUES(?, ?, ?, ?)
 					  |ON DUPLICATE KEY UPDATE count=VALUES(count)
 					  |""".stripMargin)

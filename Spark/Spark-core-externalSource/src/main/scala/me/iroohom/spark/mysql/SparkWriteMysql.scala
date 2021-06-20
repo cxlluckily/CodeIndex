@@ -58,7 +58,7 @@ object SparkWriteMysql {
        * 获取连接
        */
       conn = DriverManager.getConnection(
-        "jdbc:mysql://node1.itcast.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
+        "jdbc:mysql://node1.roohom.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
         "root",
         "123456"
       )
@@ -115,7 +115,7 @@ object SparkWriteMysql {
 
     try {
       conn = DriverManager.getConnection(
-        "jdbc:mysql://node1.itcast.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
+        "jdbc:mysql://node1.roohom.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
         "root",
         "123456"
       )
@@ -160,7 +160,7 @@ object SparkWriteMysql {
     try {
       //创建连接
       connection = DriverManager.getConnection(
-        "jdbc:mysql://node1.itcast.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
+        "jdbc:mysql://node1.roohom.cn:3306/?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true",
         "root",
         "123456"
       )

@@ -36,7 +36,7 @@ object PmtReporterRunner extends Logging {
      */
     val pmtDF: DataFrame = spark.read
       .format("hive")
-      .table("itcast_ads.pmt_ads_info")
+      .table("roohom_ads.pmt_ads_info")
       .where($"date_str".equalTo(date_sub(current_date(), 1).cast(StringType)))
 
     pmtDF.printSchema()
