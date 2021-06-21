@@ -3,11 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/logistics-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logistics-common/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/logistics-etl/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/logistics-etl/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logistics-generate/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/logistics-generate/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/logistics-offline/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/logistics-offline/src/main/resources" charset="UTF-8" />
   </component>
 </project>

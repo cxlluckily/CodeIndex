@@ -83,6 +83,11 @@
             <artifactId>logback-access</artifactId>
             <version>1.2.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.kudu</groupId>
+            <artifactId>kudu-spark2_2.11</artifactId>
+            <version>1.9.0</version>
+        </dependency>
     </dependencies>
 
 </project>
