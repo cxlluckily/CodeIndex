@@ -5,65 +5,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6012adf-0212-4ab2-8697-b703d9240c13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/KafkaLogAppender.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/bean/MessageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/common/logconvert/AppNameConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/common/logconvert/AppNameLayOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/constant/SystemConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/kafkalog/KafkaAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/main/java/me/iroohom/transform/AppIdTransform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/src/test/java/DateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/KafkaLogAppender-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/classes/me/iroohom/common/logconvert/AppNameConvert.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/classes/me/iroohom/common/logconvert/AppNameLayOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/classes/me/iroohom/constant/SystemConstant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/classes/me/iroohom/kafkalog/KafkaAppender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/surefire-reports/DateTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/surefire-reports/TEST-DateTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KafkaLogAppender/target/test-classes/DateTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/flink.app.log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/FlinkLogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/common/logconvert/AppNameConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/common/loglayout/AppNameLayOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/constant/SystemConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/kafkalog/KafkaAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/main/StreamWordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/main/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/resources/logback.xml.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaPack/KafkaCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaPack/KafkaUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaPack/TestKafka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkKuduDataDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkSQLKuduDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/src/main/scala/me/iroohom/kudu/table/SparkKuduTableDemo.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$$anonfun$queryData$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$$typecreator1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$anonfun$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$typecreator1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$typecreator2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/table/SparkKuduTableDemo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/Kudu-start/target/classes/me/iroohom/kudu/table/SparkKuduTableDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kudu/data/kuduDataDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kudu/table/kuduTableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kuduApi/KuduAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kuduApi/KuduAgentUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kuduApi/KuduColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kuduApi/KuduRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/java/me/iroohom/kuduApi/TestKudu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/main/resources/conf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/test/java/KuduTableDetailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kudu/data/kuduDataDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduAgent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduAgentUtils$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduAgentUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduColumn$AlterColumnEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduColumn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduRow$AlterTableEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/KuduRow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/classes/me/iroohom/kuduApi/TestKudu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/kudu-start-java/target/test-classes/KuduTableDetailTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KuduOperation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparKudu/.idea/SparKudu.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparKudu/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafka/KafkaPro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafkaPack/KafkaPro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/start/WriteDataToKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/start/WriteDataToKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kafka/KafkaPro.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/start/WriteDataToKafka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/start/WriteDataToKafka.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spark/Spark-SQL/src/main/scala/me/iroohom/dataframe/SparkRDDSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Spark/Spark-SQL/src/main/scala/me/iroohom/dataframe/SparkRDDSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/java/KuduScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/java/KuduScan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/Example.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/Example.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/OperationOnKudu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/OperationOnKudu.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/deleteKuduData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/deleteKuduData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logistics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/Kudu-start.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkKuduDataDemo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/src/main/scala/me/iroohom/kudu/data/SparkSQLKuduDemo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/src/main/scala/me/iroohom/kudu/table/SparkKuduTableDemo.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$$anonfun$queryData$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkKuduDataDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$$typecreator2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/data/SparkSQLKuduDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/table/SparkKuduTableDemo$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Kudu-start/target/classes/me/iroohom/kudu/table/SparkKuduTableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/Logistics.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/kudu-start-java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/data/kuduDataDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/src/main/java/me/iroohom/kudu/table/kuduTableDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/data/kuduDataDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/kudu-start-java/target/classes/me/iroohom/kudu/table/kuduTableDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logistics/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScalaProjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ScalaProjects/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SparKudu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SparKudu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logistics-parent/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logistics-parent/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +115,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/kafkaPack/KafkaPro.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bc7549ad8a1488715f6edda5de8205cd/Message/MessageTemp/ec2836605061522aeb44f7664f17803f/File/KafkaUtil.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/kafkaPack/KafkaCon.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven_Repository" />
-        <option name="mavenHome" value="D:\Programs\apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\Programs\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../maven/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -106,15 +142,59 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_201/bin/jvisualvm.exe" />
-    <property name="settings.editor.selected.configurable" value="GrepConsole" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/kafka" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/kafka" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="kafka" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.KafkaCon (1)">
+    <configuration name="KafkaCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka.KafkaCon" />
+      <module name="KafkaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafkaPack.KafkaCon" />
+      <module name="KafkaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafkaPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafkaPack.TestKafka" />
+      <module name="KafkaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafkaPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WriteDataToKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="start.WriteDataToKafka" />
       <module name="KafkaPro" />
@@ -128,8 +208,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KafkaCon (1)" />
+        <item itemvalue="Application.TestKafka" />
+        <item itemvalue="Application.KafkaCon" />
         <item itemvalue="Application.WriteDataToKafka" />
       </list>
     </recent_temporary>
@@ -142,7 +238,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611840780150</updated>
+      <workItem from="1624348221557" duration="402000" />
+      <workItem from="1624348641565" duration="5999000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

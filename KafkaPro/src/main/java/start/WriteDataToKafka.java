@@ -1,6 +1,6 @@
 package start;
 
-import kafka.KafkaPro;
+import kafkaPack.KafkaPro;
 
 import java.io.*;
 
