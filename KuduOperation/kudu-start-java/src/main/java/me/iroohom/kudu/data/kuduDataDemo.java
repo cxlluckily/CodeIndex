@@ -79,7 +79,7 @@ public class kuduDataDemo {
         kuduSession.setFlushMode(SessionConfiguration.FlushMode.MANUAL_FLUSH);
         kuduSession.setMutationBufferSpace(3000);
         //传递表的名称获取表的句柄
-        KuduTable kuduTable = kuduClient.openTable("users");
+        KuduTable kuduTable = kuduClient.openTable("test_users_bak");
         for (int i = 0; i < 100; i++) {
             //获取insert对象设置row
             Insert insert = kuduTable.newInsert();
@@ -105,7 +105,7 @@ public class kuduDataDemo {
      */
     @Test
     public void selectKuduData() throws KuduException {
-        KuduTable kuduTable = kuduClient.openTable("unit_stu_info_new_3");
+        KuduTable kuduTable = kuduClient.openTable("test_users_bak");
         //查询数据，扫描全表，查询所有数据
         KuduScanner.KuduScannerBuilder kuduScannerBuilder = kuduClient.newScannerBuilder(kuduTable);
         //扫描出数据

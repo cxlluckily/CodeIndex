@@ -69,7 +69,7 @@ public class kuduTableDemo {
         //设置副本
         builder.setNumReplicas(1);
 
-        KuduTable kuduTable = kuduClient.createTable("users", schema, builder);
+        KuduTable kuduTable = kuduClient.createTable("test_users", schema, builder);
         System.out.println("Kudu Table ID = " + kuduTable.getTableId());
     }
 
