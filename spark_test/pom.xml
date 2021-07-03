@@ -88,6 +88,33 @@
             <artifactId>kudu-spark2_2.11</artifactId>
             <version>1.9.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>3.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.amazingSaltFish</groupId>
+            <artifactId>spark-with-datasource</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 
 </project>

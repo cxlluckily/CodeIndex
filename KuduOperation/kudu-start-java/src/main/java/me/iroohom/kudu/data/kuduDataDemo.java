@@ -43,7 +43,7 @@ public class kuduDataDemo {
      */
     @Before
     public void init() {
-        kuduClient = new KuduClient.KuduClientBuilder("node2:7051")
+        kuduClient = new KuduClient.KuduClientBuilder("10.122.44.118:7051,10.122.44.119:7051,10.122.44.120:7051")
                 .defaultSocketReadTimeoutMs(6000)
                 .build();
     }
@@ -105,7 +105,7 @@ public class kuduDataDemo {
      */
     @Test
     public void selectKuduData() throws KuduException {
-        KuduTable kuduTable = kuduClient.openTable("test_users_bak");
+        KuduTable kuduTable = kuduClient.openTable("sa_mos_realtime_sync_test_cdc_order_cc_rt");
         //查询数据，扫描全表，查询所有数据
         KuduScanner.KuduScannerBuilder kuduScannerBuilder = kuduClient.newScannerBuilder(kuduTable);
         //扫描出数据
@@ -119,10 +119,13 @@ public class kuduDataDemo {
             RowResultIterator rowResults = kuduScanner.nextRows();
             while (rowResults.hasNext()) {
                 RowResult rowResult = rowResults.next();
-                int id = rowResult.getInt("id");
-                String name = rowResult.getString("name");
-//                byte age = rowResult.getByte("age");
-                System.out.println("id = " + id + ", name = " + name);
+                System.out.println(rowResult.toString());
+                System.out.println(rowResult.getDecimal("CREATE_DECIMAL"));
+                System.out.println(rowResult.getDecimal("ADD_DECIMAL"));
+//                int id = rowResult.getInt("id");
+//                String name = rowResult.getString("name");
+////                byte age = rowResult.getByte("age");
+//                System.out.println("id = " + id + ", name = " + name);
             }
         }
     }
