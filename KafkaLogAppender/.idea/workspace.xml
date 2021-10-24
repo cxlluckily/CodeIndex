@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ee86389-a70f-4cca-9ea0-c6e01aedf9ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/KafkaLogAppender.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/bean/MessageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/common/logconvert/AppNameConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/common/logconvert/AppNameLayOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/constant/SystemConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/kafkalog/KafkaAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/iroohom/transform/AppIdTransform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/KafkaLogAppender-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/me/iroohom/common/logconvert/AppNameConvert.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/me/iroohom/common/logconvert/AppNameLayOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/me/iroohom/constant/SystemConstant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/me/iroohom/kafkalog/KafkaAppender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/DateTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-DateTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/DateTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/flink.app.log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/FlinkLogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/common/logconvert/AppNameConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/common/loglayout/AppNameLayOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/constant/SystemConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/kafkalog/KafkaAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/main/StreamWordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/java/me/iroohom/main/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_test/src/main/resources/logback.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaPro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaPro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spark/Spark-SQL/src/main/scala/me/iroohom/dataframe/SparkRDDSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../Spark/Spark-SQL/src/main/scala/me/iroohom/dataframe/SparkRDDSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/java/KuduScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/java/KuduScan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/Example.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/Example.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/OperationOnKudu.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/OperationOnKudu.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_test/src/test/scala/deleteKuduData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_test/src/test/scala/deleteKuduData.scala" afterDir="false" />
-    </list>
+    <list default="true" id="8ee86389-a70f-4cca-9ea0-c6e01aedf9ed" name="Default Changelist" comment="delete jar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +12,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -168,5 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete jar" />
   </component>
 </project>
