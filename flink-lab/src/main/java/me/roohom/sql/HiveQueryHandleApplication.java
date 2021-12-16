@@ -12,8 +12,8 @@ public class HiveQueryHandleApplication {
 
     private static final String catalogName = "default";
     private static final String defaultDatabase = "test";
-//    private static final String hiveConfDir = "/etc/hive/conf";
-    private static final String hiveConfDir = "D:\\export\\conf";
+//    private static final String hiveConfDir = "/etc/hive/Config";
+    private static final String hiveConfDir = "D:\\export\\Config";
 
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
