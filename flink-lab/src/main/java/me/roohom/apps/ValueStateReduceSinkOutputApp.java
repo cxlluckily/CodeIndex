@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import me.roohom.operator.ValueFlatMapFunction;
 import org.apache.flink.api.common.functions.FlatMapFunction;

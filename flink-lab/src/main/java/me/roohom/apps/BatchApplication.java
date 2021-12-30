@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import lombok.SneakyThrows;
 import org.apache.flink.api.java.ExecutionEnvironment;

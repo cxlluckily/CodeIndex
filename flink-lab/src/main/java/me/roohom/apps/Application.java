@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.roohom.bean.Person;

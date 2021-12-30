@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import me.roohom.bean.Person;
 import me.roohom.format.Bytes2InputFormat;

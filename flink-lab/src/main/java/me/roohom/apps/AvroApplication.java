@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import me.roohom.bean.User;
 import org.apache.flink.core.fs.Path;

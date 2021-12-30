@@ -1,4 +1,4 @@
-package me.roohom;
+package me.roohom.apps;
 
 import me.roohom.source.HttpSource;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
