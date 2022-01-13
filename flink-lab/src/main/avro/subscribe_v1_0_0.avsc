@@ -1,0 +1,39 @@
+[
+    {
+        "namespace": "de.audi.tss.avro.subscription",
+        "type": "record",
+        "name": "Subscription",
+        "fields": [
+            {
+                "name": "vin",
+                "type": "string"
+            },
+            {
+                "name": "correlationId",
+                "type": "string"
+            },
+            {
+                "name": "dataIdList",
+                "type": {
+                    "type": "array",
+                    "items": "string"
+                }
+            }
+        ]
+    },
+    {
+        "namespace": "de.audi.tss.avro.subscription",
+        "type": "record",
+        "name": "Unsubscription",
+        "fields": [
+            {
+                "name": "vin",
+                "type": "string"
+            },
+            {
+                "name": "correlationId",
+                "type": "string"
+            }
+        ]
+    }
+]

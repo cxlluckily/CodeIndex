@@ -1,0 +1,133 @@
+[
+    {
+        "namespace": "de.audi.tss.avro.callback",
+        "type": "record",
+        "name": "Field",
+        "fields": [
+            {
+                "name": "value",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "unit",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "textId",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "text",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "picId",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "tsCarCaptured",
+                "type": "string",
+                "doc": "car local time format: yyyy-MM-dd'T'HH:mm:ss.SSS"
+            },
+            {
+                "name": "tsCarSent",
+                "type": "string",
+                "doc": "car local time format: yyyy-MM-dd'T'HH:mm:ss.SSS"
+            },
+            {
+                "name": "tsCarSentUtc",
+                "type": "string",
+                "doc": "UTC time format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            },
+            {
+                "name": "tsTssReceivedUtc",
+                "type": "string",
+                "doc": "UTC time format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            },
+            {
+                "name": "milCarCaptured",
+                "type": "int"
+            },
+            {
+                "name": "milCarSent",
+                "type": "int"
+            }
+        ]
+    },
+    {
+        "namespace": "de.audi.tss.avro.callback",
+        "type": "record",
+        "name": "DataBlock",
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "fieldList",
+                "type": {
+                    "type": "array",
+                    "items": "de.audi.tss.avro.callback.Field"
+                }
+            }
+        ]
+    },
+    {
+        "namespace": "de.audi.tss.avro.callback",
+        "type": "record",
+        "name": "VehicleDataMetaInfo",
+        "fields": [
+            {
+                "name": "vin",
+                "type": "string"
+            },
+            {
+                "name": "brand",
+                "type": "string"
+            },
+            {
+                "name": "country",
+                "type": "string"
+            },
+            {
+                "name": "tsTssDispatchUtc",
+                "type": "string",
+                "doc": "UTC time format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+            },
+            {
+                "name": "fleetId",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "providerId",
+                "type": ["string", "null"]
+            },
+            {
+                "name": "tripDataReason",
+                "type": ["string", "null"]
+            }
+        ]
+    },
+    {
+        "namespace": "de.audi.tss.avro.callback",
+        "type": "record",
+        "name": "VehicleDataReport",
+        "fields": [
+            {
+                "name": "vehicleDataMetaInfo",
+                "type": "de.audi.tss.avro.callback.VehicleDataMetaInfo"
+            },
+            {
+                "name": "vehicleDataList",
+                "type": {
+                    "type": "array",
+                    "items": "de.audi.tss.avro.callback.DataBlock"
+                }
+            }
+        ]
+    }
+]

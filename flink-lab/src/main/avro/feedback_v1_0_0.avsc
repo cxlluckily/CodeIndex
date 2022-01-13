@@ -1,0 +1,25 @@
+{
+    "namespace": "de.audi.tss.avro.feedback",
+    "type": "record",
+    "name": "Feedback",
+    "fields": [
+        {
+            "name": "correlationId",
+            "type": "string"
+        },
+        {
+            "name": "feedbackMessage",
+            "type": {
+                "type": "enum",
+                "name": "feedbackMessageEnum",
+                "symbols": [
+                     "ACK_SUBSCRIPTION_SUCCESSFUL",
+                     "ACK_UNSUBSCRIPTION_SUCCESSFUL",
+                     "NACK_NO_PERMISSION",
+                     "NACK_INVALID_MESSAGE",
+                     "NACK_UNKNOWN_ERROR"
+                ]
+            }
+        }
+    ]
+}
